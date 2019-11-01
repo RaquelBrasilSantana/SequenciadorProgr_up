@@ -1,9 +1,20 @@
 /*
  * File:   serialIO.c
- * Author: sn1011701
+ * Author: curtaeletronica
  *
- * Created on 19 de Julho de 2019, 10:35
+ * Created on 30 de Setembro de 2019, 19:36
+ * 
+ * Objetivo: 
+ *      Camada de Abstração de Hardware:
+ *          Interface com o CIs 74595 e 74165.
+ * 
+ * Pinos    |nº     |Conexão
+ * RE0      |8      | SHLD : Shift / Load
+ * RE1      |9      | CLK : Clock
+ * RE2      |10     | OUT : Output
+ * RE3      |1      | IN : Input
  */
+
 
 
 #include <xc.h>
@@ -14,79 +25,21 @@ unsigned char * ptrSerialOut;
 unsigned char   lenSerialIO;
 
 // ************************** HAL
+#define SERIALIO_ADDRS 0x009
+#define SERIALIO_IN     PORTAbits.RA0
+typedef union
+{
+    struct
+    {
+        unsigned char SHLD:1;
+        unsigned char CLK :1;
+        unsigned char OUT :1;
+//        unsigned char IN  :1;
+    };
+} SERIALIObits_t;
 volatile SERIALIObits_t SERIALIO __at(SERIALIO_ADDRS);
 
-void initSerialIO( unsigned char * ptrIn, unsigned char * ptrOut, unsigned char length )
-{
-    ptrSerialIn = ptrIn;
-    ptrSerialOut = ptrOut;
-    lenSerialIO = length;
-// ************************** Serial IO Shift/Load
-    PORTEbits.RE0 = 0;
-    ANSELbits.ANS5 = 0;
-    TRISEbits.TRISE0 = 0;
 
-// ************************** Serial IO Clock
-    PORTEbits.RE1 = 0;
-    ANSELbits.ANS6 = 0;
-    TRISEbits.TRISE1 = 0;
-
-// ************************** Serial IO Output
-    PORTEbits.RE2 = 0;
-    ANSELbits.ANS7 = 0;
-    TRISEbits.TRISE2 = 0;
-
-// ************************** Serial IO Input
-    PORTEbits.RE3;
-    TRISEbits.TRISE3 = 1;
-    
-    
-    SERIALIO.CLK = 0;
-    SERIALIO.OUT = 0;
-    SERIALIO.SHLD = 1;
-    
-}
-
-
-void serialOut( unsigned char d )
-{
-    unsigned char i = 0x80;
-
-    SERIALIO.SHLD = 1;
-    while( i )
-    {
-        SERIALIO.CLK = 0;
-        if(d & i)
-            SERIALIO.OUT = 1;
-        else
-            SERIALIO.OUT = 0;
-        SERIALIO.CLK = 1;
-        i >>= 1;
-    }
-    SERIALIO.SHLD = 0;
-    SERIALIO.CLK = 0;
-    SERIALIO.SHLD = 1;
-}
-
-
-unsigned char serialIn( void )
-{
-    unsigned char i;
-    unsigned char dado = 0;
-    
-    SERIALIO.SHLD = 0;
-    i = 0x80;
-    SERIALIO.SHLD = 1;
-    while( i )
-    {
-        SERIALIO.CLK = 0;
-        if( SERIALIO.IN )
-            dado |= i;
-        SERIALIO.CLK = 1;
-        i >>= 1;
-    }
-    return( dado );
-}
 
 void serialIOload( void )
 {
@@ -109,7 +62,7 @@ unsigned char serialIObyteShift( unsigned char dataIn )
         else
             SERIALIO.OUT = 0;
 
-        if( SERIALIO.IN )
+        if( SERIALIO_IN )
             dataOut |= dataBit;
         SERIALIO.CLK = 1;
         dataBit >>= 1;
@@ -118,8 +71,8 @@ unsigned char serialIObyteShift( unsigned char dataIn )
     return( dataOut );
 }
 
-// ************************** Interface Serial IO
-void serialIO( void )
+//***************** Interface Serial IO Scan
+void serialIOscan( void )
 {
     unsigned char i,j;
     j = lenSerialIO - 1;
@@ -129,4 +82,38 @@ void serialIO( void )
         ptrSerialIn[i] = serialIObyteShift( ptrSerialOut[j-i]);
     }
     serialIOload();
+}
+
+//***************** Inicialiação de interface com SerialIO
+void initSerialIO( unsigned char * ptrIn, unsigned char * ptrOut, unsigned char length )
+{
+    ptrSerialIn = ptrIn;
+    ptrSerialOut = ptrOut;
+    lenSerialIO = length;
+// ************************** Serial IO Shift/Load
+    PORTEbits.RE0 = 0;
+    ANSELbits.ANS5 = 0;
+    TRISEbits.TRISE0 = 0;
+
+// ************************** Serial IO Clock
+    PORTEbits.RE1 = 0;
+    ANSELbits.ANS6 = 0;
+    TRISEbits.TRISE1 = 0;
+
+// ************************** Serial IO Output
+    PORTEbits.RE2 = 0;
+    ANSELbits.ANS7 = 0;
+    TRISEbits.TRISE2 = 0;
+
+// ************************** Serial IO Input
+//    PORTEbits.RE3;
+//    TRISEbits.TRISE3 = 1;
+    ANSELbits.ANS0 = 0;
+    TRISAbits.TRISA0 = 1;
+    
+    
+//***************** Inicialização dos pinos de interface com os CIs
+    SERIALIO.CLK = 0;
+    SERIALIO.OUT = 0;
+    SERIALIO.SHLD = 1;
 }

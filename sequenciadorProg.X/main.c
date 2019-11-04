@@ -52,7 +52,7 @@ void main(void)
     unsigned char rest = 0;
     SENSORESbits_t sensor;
     ATUADORESbits_t atuador;
-    char estado = 0;
+    int estado = 0;
   
     initLCD();
     initKeyboard();
@@ -78,6 +78,32 @@ void main(void)
                             estado = 120;
                         else if( rest == 'D' )
                             estado = 130;
+                        else if( rest == '1' )
+                            estado = 140;
+                        else if( rest == '2' )
+                            estado = 150;
+                        else if( rest == '3' )
+                            estado = 160;
+                        else if( rest == '4' )
+                            estado = 170;
+                        else if( rest == '5' )
+                            estado = 180;
+                        else if( rest == '6' )
+                            estado = 190;
+                        else if( rest == '7' )
+                            estado = 200;
+                        else if( rest == '8' )
+                            estado = 210;
+                        else if( rest == '9' )
+                            estado = 220;
+                        else if( rest == 'a' )
+                            estado = 230;
+                        else if( rest == 'b' )
+                            estado = 240;
+                        else if( rest == 'c' )
+                            estado = 250;
+                        else if( rest == 'd' )
+                            estado = 260;
                     break;
             case 100: // A+
                     atuador.A = 1;
@@ -111,6 +137,102 @@ void main(void)
                     if( sensor.D1 == 1)
                         estado = 10;
                     break;
+            case 140:
+                    __delay_ms(1000);
+                    estado = 141;
+                    break;
+            case 141:
+                    estado = 10;
+                    break;
+            case 150:
+                    __delay_ms(2000);
+                    estado = 151;
+                    break;
+            case 151:
+                    estado = 10;
+                    break;
+            case 160:
+                    __delay_ms(3000);
+                    estado = 161;
+                    break;
+            case 161:
+                    estado = 10;
+                    break;
+            case 170:
+                    __delay_ms(4000);
+                    estado = 171;
+                    break;
+            case 171:
+                    estado = 10;
+                    break;
+            case 180:
+                    __delay_ms(5000);
+                    estado = 181;
+                    break;
+            case 181:
+                    estado = 10;
+                    break;
+            case 190:
+                    __delay_ms(6000);
+                    estado = 191;
+                    break;
+            case 191:
+                    estado = 10;
+                    break;
+            case 200:
+                    __delay_ms(7000);
+                    estado = 201;
+                    break;
+            case 201:
+                    estado = 10;
+                    break;
+            case 210:
+                    __delay_ms(8000);
+                    estado = 211;
+                    break;
+            case 211:
+                    estado = 10;
+                    break;
+            case 220:
+                    __delay_ms(9000);
+                    estado = 221;
+                    break;
+            case 221:
+                    estado = 10;
+                    break;
+                    
+            case 230: // A-
+                    atuador.A = 0;
+                    estado = 231;
+                    break;
+            case 231:
+                    if( sensor.A0 == 1)
+                        estado = 10;
+                    break;        
+            case 240: // B-
+                    atuador.B = 0;
+                    estado = 241;
+                    break;
+            case 241:
+                    if( sensor.B0 == 1)
+                        estado = 10;
+                    break;        
+            case 250: // C-
+                    atuador.C = 0;
+                    estado = 251;
+                    break;
+            case 251:
+                    if( sensor.C0 == 1)
+                        estado = 10;
+                    break;        
+            case 260: // D-
+                    atuador.D = 0;
+                    estado = 261;
+                    break;
+            case 261:
+                    if( sensor.D0 == 1)
+                        estado = 10;
+                    break;        
             
         }
         if( currentKey() && !previousKey() )

@@ -1,0 +1,371 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"17 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\fifo.c
+[v _putFIFO putFIFO `(v  1 e 1 0 ]
+"23
+[v _getFIFO getFIFO `(uc  1 e 1 0 ]
+"40
+[v _displayFIFO displayFIFO `(*.4v  1 e 1 0 ]
+"45
+[v _delFIFO delFIFO `(uc  1 e 1 0 ]
+"55 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\keyboard.c
+[v _previousKey previousKey `(uc  1 e 1 0 ]
+"65
+[v _currentKey currentKey `(uc  1 e 1 0 ]
+"75
+[v _keyboardScan keyboardScan `(uc  1 e 1 0 ]
+"103
+[v _initKeyboard initKeyboard `(v  1 e 1 0 ]
+"115 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
+[v _lcdcmd lcdcmd `(v  1 e 1 0 ]
+"149
+[v _lcddat lcddat `(v  1 e 1 0 ]
+"174
+[v _lcdxy lcdxy `(v  1 e 1 0 ]
+"188
+[v _lcd lcd `(v  1 e 1 0 ]
+"243
+[v _initLCD initLCD `(v  1 e 1 0 ]
+"276
+[v _clearLCD clearLCD `(v  1 e 1 0 ]
+"48 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"44 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\serialIO.c
+[v _serialIOload serialIOload `(v  1 e 1 0 ]
+"49
+[v _serialIObyteShift serialIObyteShift `(uc  1 e 1 0 ]
+"75
+[v _serialIOscan serialIOscan `(v  1 e 1 0 ]
+"88
+[v _initSerialIO initSerialIO `(v  1 e 1 0 ]
+[s S273 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"183 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
+[u S282 . 1 `S273 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES282  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S294 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"427
+[u S299 . 1 `S294 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES299  1 e 1 @9 ]
+[s S50 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1366
+[s S57 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S61 . 1 `S50 1 . 1 0 `S57 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES61  1 e 1 @129 ]
+[s S341 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1433
+[u S350 . 1 `S341 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES350  1 e 1 @133 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S328 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 TRISE3 1 0 :1:3 
+]
+"1677
+[u S333 . 1 `S328 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES333  1 e 1 @137 ]
+"2346
+[v _WPUB WPUB `VEuc  1 e 1 @149 ]
+[s S307 . 1 `uc 1 ANS0 1 0 :1:0 
+`uc 1 ANS1 1 0 :1:1 
+`uc 1 ANS2 1 0 :1:2 
+`uc 1 ANS3 1 0 :1:3 
+`uc 1 ANS4 1 0 :1:4 
+`uc 1 ANS5 1 0 :1:5 
+`uc 1 ANS6 1 0 :1:6 
+`uc 1 ANS7 1 0 :1:7 
+]
+"3404
+[u S316 . 1 `S307 1 . 1 0 ]
+[v _ANSELbits ANSELbits `VES316  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"13 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\fifo.c
+[v _fifo fifo `[16]uc  1 e 16 0 ]
+"14
+[v _fifoHead fifoHead `uc  1 e 1 0 ]
+"15
+[v _fifoTail fifoTail `uc  1 e 1 0 ]
+[s S37 . 1 `uc 1 rows 1 0 :4:0 
+`uc 1 cols 1 0 :4:4 
+]
+"35 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\keyboard.c
+[u S40 . 1 `S37 1 . 1 0 ]
+[v _KEYBOARDbits KEYBOARDbits `VES40  1 e 1 @6 ]
+"39
+[v _keyboardMatrix keyboardMatrix `DC[4][4]uc  1 e 16 0 ]
+"45
+[v _prevKey prevKey `uc  1 e 1 0 ]
+"46
+[v _currKey currKey `uc  1 e 1 0 ]
+[s S95 . 1 `uc 1 BUS 1 0 :4:0 
+`uc 1 RS 1 0 :1:4 
+`uc 1 EN 1 0 :1:5 
+`uc 1 B0 1 0 :1:6 
+`uc 1 B1 1 0 :1:7 
+]
+"106 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
+[u S101 . 1 `S95 1 . 1 0 ]
+[v _LCDbits LCDbits `VES101  1 e 1 @8 ]
+"23 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\serialIO.c
+[v _ptrSerialIn ptrSerialIn `*.4uc  1 e 1 0 ]
+"24
+[v _ptrSerialOut ptrSerialOut `*.4uc  1 e 1 0 ]
+"25
+[v _lenSerialIO lenSerialIO `uc  1 e 1 0 ]
+[s S267 . 1 `uc 1 SHLD 1 0 :1:0 
+`uc 1 CLK 1 0 :1:1 
+`uc 1 OUT 1 0 :1:2 
+]
+"40
+[u S271 . 1 `S267 1 . 1 0 ]
+[v _SERIALIO SERIALIO `VES271  1 e 1 @9 ]
+"48 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"55
+[v main@estado estado `i  1 a 2 10 ]
+"52
+[v main@rest rest `uc  1 a 1 12 ]
+"50
+[v main@tecla tecla `uc  1 a 1 9 ]
+[s S166 . 1 `uc 1 A0 1 0 :1:0 
+`uc 1 B0 1 0 :1:1 
+`uc 1 C0 1 0 :1:2 
+`uc 1 D0 1 0 :1:3 
+`uc 1 A1 1 0 :1:4 
+`uc 1 B1 1 0 :1:5 
+`uc 1 C1 1 0 :1:6 
+`uc 1 D1 1 0 :1:7 
+]
+"53
+[s S175 . 1 `uc 1 ABCD0 1 0 :4:0 
+`uc 1 ABCD1 1 0 :4:4 
+]
+[u S178 . 1 `S166 1 . 1 0 `S175 1 . 1 0 ]
+[v main@sensor sensor `S178  1 a 1 8 ]
+[s S181 . 1 `uc 1 A 1 0 :1:0 
+`uc 1 B 1 0 :1:1 
+`uc 1 C 1 0 :1:2 
+`uc 1 D 1 0 :1:3 
+]
+"54
+[u S186 . 1 `S181 1 . 1 0 `uc 1 ABCD 1 0 ]
+[v main@atuador atuador `S186  1 a 1 7 ]
+"51
+[v main@d d `uc  1 a 1 6 ]
+[v main@c c `uc  1 a 1 5 ]
+[v main@b b `uc  1 a 1 4 ]
+[v main@a a `uc  1 a 1 3 ]
+"310
+} 0
+"75 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\serialIO.c
+[v _serialIOscan serialIOscan `(v  1 e 1 0 ]
+{
+"77
+[v serialIOscan@i i `uc  1 a 1 8 ]
+[v serialIOscan@j j `uc  1 a 1 7 ]
+"85
+} 0
+"44
+[v _serialIOload serialIOload `(v  1 e 1 0 ]
+{
+"48
+} 0
+"49
+[v _serialIObyteShift serialIObyteShift `(uc  1 e 1 0 ]
+{
+[v serialIObyteShift@dataIn dataIn `uc  1 a 1 wreg ]
+"51
+[v serialIObyteShift@dataBit dataBit `uc  1 a 1 3 ]
+"52
+[v serialIObyteShift@dataOut dataOut `uc  1 a 1 2 ]
+"49
+[v serialIObyteShift@dataIn dataIn `uc  1 a 1 wreg ]
+"54
+[v serialIObyteShift@dataIn dataIn `uc  1 a 1 1 ]
+"72
+} 0
+"17 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\fifo.c
+[v _putFIFO putFIFO `(v  1 e 1 0 ]
+{
+[v putFIFO@c c `uc  1 a 1 wreg ]
+[v putFIFO@c c `uc  1 a 1 wreg ]
+"19
+[v putFIFO@c c `uc  1 a 1 2 ]
+"21
+} 0
+"55 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\keyboard.c
+[v _previousKey previousKey `(uc  1 e 1 0 ]
+{
+"58
+} 0
+"188 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
+[v _lcd lcd `(v  1 e 1 0 ]
+{
+[v lcd@x x `uc  1 a 1 wreg ]
+[v lcd@x x `uc  1 a 1 wreg ]
+[v lcd@y y `uc  1 p 1 7 ]
+[v lcd@ptr ptr `*.4DCuc  1 p 1 8 ]
+"190
+[v lcd@x x `uc  1 a 1 10 ]
+"193
+} 0
+"75 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\keyboard.c
+[v _keyboardScan keyboardScan `(uc  1 e 1 0 ]
+{
+"77
+[v keyboardScan@j j `uc  1 a 1 5 ]
+[v keyboardScan@i i `uc  1 a 1 4 ]
+"78
+[v keyboardScan@aux aux `uc  1 a 1 3 ]
+"94
+} 0
+"88 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\serialIO.c
+[v _initSerialIO initSerialIO `(v  1 e 1 0 ]
+{
+[v initSerialIO@ptrIn ptrIn `*.4uc  1 a 1 wreg ]
+[v initSerialIO@ptrIn ptrIn `*.4uc  1 a 1 wreg ]
+[v initSerialIO@ptrOut ptrOut `*.4uc  1 p 1 0 ]
+[v initSerialIO@length length `uc  1 p 1 1 ]
+"90
+[v initSerialIO@ptrIn ptrIn `*.4uc  1 a 1 3 ]
+"119
+} 0
+"243 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
+[v _initLCD initLCD `(v  1 e 1 0 ]
+{
+"245
+[v initLCD@j j `uc  1 a 1 11 ]
+[v initLCD@i i `uc  1 a 1 10 ]
+"274
+} 0
+"174
+[v _lcdxy lcdxy `(v  1 e 1 0 ]
+{
+[v lcdxy@x x `uc  1 a 1 wreg ]
+[v lcdxy@x x `uc  1 a 1 wreg ]
+[v lcdxy@y y `uc  1 p 1 4 ]
+"176
+[v lcdxy@x x `uc  1 a 1 6 ]
+"177
+} 0
+"149
+[v _lcddat lcddat `(v  1 e 1 0 ]
+{
+[v lcddat@dat dat `uc  1 a 1 wreg ]
+[s S103 . 1 `uc 1 LO 1 0 :4:0 
+`uc 1 HI 1 0 :4:4 
+]
+"151
+[u S106 . 1 `S103 1 . 1 0 `uc 1 HILO 1 0 ]
+[v lcddat@nibble nibble `VES106  1 a 1 2 ]
+"149
+[v lcddat@dat dat `uc  1 a 1 wreg ]
+"152
+[v lcddat@dat dat `uc  1 a 1 1 ]
+"165
+} 0
+"103 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\keyboard.c
+[v _initKeyboard initKeyboard `(v  1 e 1 0 ]
+{
+"113
+} 0
+"23 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\fifo.c
+[v _getFIFO getFIFO `(uc  1 e 1 0 ]
+{
+"25
+[v getFIFO@aux aux `uc  1 a 1 2 ]
+"33
+} 0
+"40
+[v _displayFIFO displayFIFO `(*.4v  1 e 1 0 ]
+{
+"43
+} 0
+"45
+[v _delFIFO delFIFO `(uc  1 e 1 0 ]
+{
+[v delFIFO@n n `uc  1 a 1 wreg ]
+"47
+[v delFIFO@ret ret `uc  1 a 1 2 ]
+"45
+[v delFIFO@n n `uc  1 a 1 wreg ]
+[v delFIFO@n n `uc  1 a 1 1 ]
+"56
+} 0
+"65 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\keyboard.c
+[v _currentKey currentKey `(uc  1 e 1 0 ]
+{
+"68
+} 0
+"276 Z:\MplabX\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
+[v _clearLCD clearLCD `(v  1 e 1 0 ]
+{
+"279
+} 0
+"115
+[v _lcdcmd lcdcmd `(v  1 e 1 0 ]
+{
+[v lcdcmd@cmd cmd `uc  1 a 1 wreg ]
+[s S103 . 1 `uc 1 LO 1 0 :4:0 
+`uc 1 HI 1 0 :4:4 
+]
+"117
+[u S106 . 1 `S103 1 . 1 0 `uc 1 HILO 1 0 ]
+[v lcdcmd@nibble nibble `VES106  1 a 1 3 ]
+"115
+[v lcdcmd@cmd cmd `uc  1 a 1 wreg ]
+"119
+[v lcdcmd@cmd cmd `uc  1 a 1 2 ]
+"142
+} 0

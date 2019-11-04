@@ -61,21 +61,12 @@ void main(void)
     while( 1 )                      // Laço de repetição infinita.
     {
         
-//            atuador.A = 1;
-//            atuador.B = 1;
-//            atuador.C = 1;
-//            atuador.D = 1;
-//             __delay_ms(1000);
-//            atuador.A = 0;
-//            atuador.B = 0;
-//            atuador.C = 0;
-//            atuador.D = 0;
-//            __delay_ms(1000);
         keyboardScan();
 
         switch( estado )
         {
             case 0:
+                    
                     break;
             case 10:
                         rest = getFIFO();
@@ -93,14 +84,15 @@ void main(void)
                     estado = 101;
                     break;
             case 101:
-                    if( sensor.A1 = 1)
+                    if( sensor.A1 == 1)
                         estado = 10;
+                    break;
             case 110:
                     atuador.B = 1;
                     estado = 111;
                     break;
             case 111:
-                    if( sensor.B1 = 1)
+                    if( sensor.B1 == 1)
                         estado = 10;
                     break;
             case 120:
@@ -108,7 +100,7 @@ void main(void)
                     estado = 121;
                     break;
             case 121:
-                    if( sensor.C1 = 1)
+                    if( sensor.C1 == 1)
                         estado = 10;
                     break;
             case 130:
@@ -116,7 +108,7 @@ void main(void)
                     estado = 131;
                     break;
             case 131:
-                    if( sensor.D1 = 1)
+                    if( sensor.D1 == 1)
                         estado = 10;
                     break;
             

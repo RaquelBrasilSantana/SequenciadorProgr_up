@@ -1,12 +1,12 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"33 serialIO.c
-[; ;serialIO.c: 33:     {
-[s S139 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S139 . SHLD CLK OUT ]
-"31
-[; ;serialIO.c: 31: {
-[u S138 `S139 1 ]
-[n S138 . . ]
+"34 serialIO.c
+[; ;serialIO.c: 34:     {
+[s S143 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S143 . SHLD CLK OUT ]
+"32
+[; ;serialIO.c: 32: {
+[u S142 `S143 1 ]
+[n S142 . . ]
 "172 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h: 172:     struct {
 [s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -296,229 +296,229 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3546
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"23 serialIO.c
-[; ;serialIO.c: 23: unsigned char * ptrSerialIn;
+"24 serialIO.c
+[; ;serialIO.c: 24: unsigned char * ptrSerialIn;
 [v _ptrSerialIn `*uc ~T0 @X0 1 e ]
-"24
-[; ;serialIO.c: 24: unsigned char * ptrSerialOut;
-[v _ptrSerialOut `*uc ~T0 @X0 1 e ]
 "25
-[; ;serialIO.c: 25: unsigned char lenSerialIO;
+[; ;serialIO.c: 25: unsigned char * ptrSerialOut;
+[v _ptrSerialOut `*uc ~T0 @X0 1 e ]
+"26
+[; ;serialIO.c: 26: unsigned char lenSerialIO;
 [v _lenSerialIO `uc ~T0 @X0 1 e ]
-"40
-[; ;serialIO.c: 40: volatile SERIALIObits_t SERIALIO __attribute__((address(0x009)));
-[v _SERIALIO `VS138 ~T0 @X0 1 e@9 ]
-"44
-[; ;serialIO.c: 44: void serialIOload( void )
-[v _serialIOload `(v ~T0 @X0 1 ef ]
+"41
+[; ;serialIO.c: 41: volatile SERIALIObits_t SERIALIO __attribute__((address(0x009)));
+[v _SERIALIO `VS142 ~T0 @X0 1 e@9 ]
 "45
-[; ;serialIO.c: 45: {
+[; ;serialIO.c: 45: void serialIOload( void )
+[v _serialIOload `(v ~T0 @X0 1 ef ]
+"46
+[; ;serialIO.c: 46: {
 {
 [e :U _serialIOload ]
 [f ]
-"46
-[; ;serialIO.c: 46:     SERIALIO.SHLD = 0;
-[e = . . _SERIALIO 0 0 -> -> 0 `i `uc ]
 "47
-[; ;serialIO.c: 47:     SERIALIO.SHLD = 1;
-[e = . . _SERIALIO 0 0 -> -> 1 `i `uc ]
+[; ;serialIO.c: 47:     SERIALIO.SHLD = 0;
+[e = . . _SERIALIO 0 0 -> -> 0 `i `uc ]
 "48
-[; ;serialIO.c: 48: }
-[e :UE 140 ]
-}
+[; ;serialIO.c: 48:     SERIALIO.SHLD = 1;
+[e = . . _SERIALIO 0 0 -> -> 1 `i `uc ]
 "49
-[; ;serialIO.c: 49: unsigned char serialIObyteShift( unsigned char dataIn )
-[v _serialIObyteShift `(uc ~T0 @X0 1 ef1`uc ]
+[; ;serialIO.c: 49: }
+[e :UE 144 ]
+}
 "50
-[; ;serialIO.c: 50: {
+[; ;serialIO.c: 50: unsigned char serialIObyteShift( unsigned char dataIn )
+[v _serialIObyteShift `(uc ~T0 @X0 1 ef1`uc ]
+"51
+[; ;serialIO.c: 51: {
 {
 [e :U _serialIObyteShift ]
-"49
-[; ;serialIO.c: 49: unsigned char serialIObyteShift( unsigned char dataIn )
-[v _dataIn `uc ~T0 @X0 1 r1 ]
 "50
-[; ;serialIO.c: 50: {
-[f ]
+[; ;serialIO.c: 50: unsigned char serialIObyteShift( unsigned char dataIn )
+[v _dataIn `uc ~T0 @X0 1 r1 ]
 "51
-[; ;serialIO.c: 51:     unsigned char dataBit;
-[v _dataBit `uc ~T0 @X0 1 a ]
+[; ;serialIO.c: 51: {
+[f ]
 "52
-[; ;serialIO.c: 52:     unsigned char dataOut;
+[; ;serialIO.c: 52:     unsigned char dataBit;
+[v _dataBit `uc ~T0 @X0 1 a ]
+"53
+[; ;serialIO.c: 53:     unsigned char dataOut;
 [v _dataOut `uc ~T0 @X0 1 a ]
-"54
-[; ;serialIO.c: 54:     dataBit = 0x80;
-[e = _dataBit -> -> 128 `i `uc ]
 "55
-[; ;serialIO.c: 55:     dataOut = 0;
+[; ;serialIO.c: 55:     dataBit = 0x80;
+[e = _dataBit -> -> 128 `i `uc ]
+"56
+[; ;serialIO.c: 56:     dataOut = 0;
 [e = _dataOut -> -> 0 `i `uc ]
-"57
-[; ;serialIO.c: 57:     while( dataBit )
-[e $U 142  ]
-[e :U 143 ]
 "58
-[; ;serialIO.c: 58:     {
-{
-"59
-[; ;serialIO.c: 59:         SERIALIO.CLK = 0;
-[e = . . _SERIALIO 0 1 -> -> 0 `i `uc ]
-"60
-[; ;serialIO.c: 60:         if( dataIn & dataBit )
-[e $ ! != & -> _dataIn `i -> _dataBit `i -> 0 `i 145  ]
-"61
-[; ;serialIO.c: 61:             SERIALIO.OUT = 1;
-[e = . . _SERIALIO 0 2 -> -> 1 `i `uc ]
+[; ;serialIO.c: 58:     while( dataBit )
 [e $U 146  ]
-"62
-[; ;serialIO.c: 62:         else
-[e :U 145 ]
-"63
-[; ;serialIO.c: 63:             SERIALIO.OUT = 0;
-[e = . . _SERIALIO 0 2 -> -> 0 `i `uc ]
-[e :U 146 ]
-"65
-[; ;serialIO.c: 65:         if( PORTAbits.RA0 )
-[e $ ! != -> . . _PORTAbits 0 0 `i -> 0 `i 147  ]
-"66
-[; ;serialIO.c: 66:             dataOut |= dataBit;
-[e =| _dataOut -> _dataBit `uc ]
 [e :U 147 ]
-"67
-[; ;serialIO.c: 67:         SERIALIO.CLK = 1;
-[e = . . _SERIALIO 0 1 -> -> 1 `i `uc ]
-"68
-[; ;serialIO.c: 68:         dataBit >>= 1;
-[e =>> _dataBit -> -> 1 `i `uc ]
-"69
-[; ;serialIO.c: 69:     }
-}
-[e :U 142 ]
-"57
-[; ;serialIO.c: 57:     while( dataBit )
-[e $ != -> _dataBit `i -> 0 `i 143  ]
-[e :U 144 ]
-"70
-[; ;serialIO.c: 70:     SERIALIO.CLK = 0;
+"59
+[; ;serialIO.c: 59:     {
+{
+"60
+[; ;serialIO.c: 60:         SERIALIO.CLK = 0;
 [e = . . _SERIALIO 0 1 -> -> 0 `i `uc ]
-"71
-[; ;serialIO.c: 71:     return( dataOut );
-[e ) _dataOut ]
-[e $UE 141  ]
-"72
-[; ;serialIO.c: 72: }
-[e :UE 141 ]
+"61
+[; ;serialIO.c: 61:         if( dataIn & dataBit )
+[e $ ! != & -> _dataIn `i -> _dataBit `i -> 0 `i 149  ]
+"62
+[; ;serialIO.c: 62:             SERIALIO.OUT = 1;
+[e = . . _SERIALIO 0 2 -> -> 1 `i `uc ]
+[e $U 150  ]
+"63
+[; ;serialIO.c: 63:         else
+[e :U 149 ]
+"64
+[; ;serialIO.c: 64:             SERIALIO.OUT = 0;
+[e = . . _SERIALIO 0 2 -> -> 0 `i `uc ]
+[e :U 150 ]
+"66
+[; ;serialIO.c: 66:         if( PORTAbits.RA0 )
+[e $ ! != -> . . _PORTAbits 0 0 `i -> 0 `i 151  ]
+"67
+[; ;serialIO.c: 67:             dataOut |= dataBit;
+[e =| _dataOut -> _dataBit `uc ]
+[e :U 151 ]
+"68
+[; ;serialIO.c: 68:         SERIALIO.CLK = 1;
+[e = . . _SERIALIO 0 1 -> -> 1 `i `uc ]
+"69
+[; ;serialIO.c: 69:         dataBit >>= 1;
+[e =>> _dataBit -> -> 1 `i `uc ]
+"70
+[; ;serialIO.c: 70:     }
 }
-"75
-[; ;serialIO.c: 75: void serialIOscan( void )
-[v _serialIOscan `(v ~T0 @X0 1 ef ]
+[e :U 146 ]
+"58
+[; ;serialIO.c: 58:     while( dataBit )
+[e $ != -> _dataBit `i -> 0 `i 147  ]
+[e :U 148 ]
+"71
+[; ;serialIO.c: 71:     SERIALIO.CLK = 0;
+[e = . . _SERIALIO 0 1 -> -> 0 `i `uc ]
+"72
+[; ;serialIO.c: 72:     return( dataOut );
+[e ) _dataOut ]
+[e $UE 145  ]
+"73
+[; ;serialIO.c: 73: }
+[e :UE 145 ]
+}
 "76
-[; ;serialIO.c: 76: {
+[; ;serialIO.c: 76: void serialIOscan( void )
+[v _serialIOscan `(v ~T0 @X0 1 ef ]
+"77
+[; ;serialIO.c: 77: {
 {
 [e :U _serialIOscan ]
 [f ]
-"77
-[; ;serialIO.c: 77:     unsigned char i,j;
+"78
+[; ;serialIO.c: 78:     unsigned char i,j;
 [v _i `uc ~T0 @X0 1 a ]
 [v _j `uc ~T0 @X0 1 a ]
-"78
-[; ;serialIO.c: 78:     j = lenSerialIO - 1;
-[e = _j -> - -> _lenSerialIO `i -> 1 `i `uc ]
 "79
-[; ;serialIO.c: 79:     serialIOload();
-[e ( _serialIOload ..  ]
+[; ;serialIO.c: 79:     j = lenSerialIO - 1;
+[e = _j -> - -> _lenSerialIO `i -> 1 `i `uc ]
 "80
-[; ;serialIO.c: 80:     for( i=0; i<lenSerialIO; i++ )
+[; ;serialIO.c: 80:     serialIOload();
+[e ( _serialIOload ..  ]
+"81
+[; ;serialIO.c: 81:     for( i=0; i<lenSerialIO; i++ )
 {
 [e = _i -> -> 0 `i `uc ]
-[e $U 152  ]
-[e :U 149 ]
-"81
-[; ;serialIO.c: 81:     {
-{
+[e $U 156  ]
+[e :U 153 ]
 "82
-[; ;serialIO.c: 82:         ptrSerialIn[i] = serialIObyteShift( ptrSerialOut[j-i]);
-[e = *U + _ptrSerialIn * -> _i `ux -> -> # *U _ptrSerialIn `ui `ux ( _serialIObyteShift (1 *U + _ptrSerialOut * -> - -> _j `i -> _i `i `x -> -> # *U _ptrSerialOut `i `x ]
+[; ;serialIO.c: 82:     {
+{
 "83
-[; ;serialIO.c: 83:     }
+[; ;serialIO.c: 83:         ptrSerialIn[i] = serialIObyteShift( ptrSerialOut[j-i]);
+[e = *U + _ptrSerialIn * -> _i `ux -> -> # *U _ptrSerialIn `ui `ux ( _serialIObyteShift (1 *U + _ptrSerialOut * -> - -> _j `i -> _i `i `x -> -> # *U _ptrSerialOut `i `x ]
+"84
+[; ;serialIO.c: 84:     }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e :U 152 ]
-[e $ < -> _i `i -> _lenSerialIO `i 149  ]
-[e :U 150 ]
+[e :U 156 ]
+[e $ < -> _i `i -> _lenSerialIO `i 153  ]
+[e :U 154 ]
 }
-"84
-[; ;serialIO.c: 84:     serialIOload();
-[e ( _serialIOload ..  ]
 "85
-[; ;serialIO.c: 85: }
-[e :UE 148 ]
+[; ;serialIO.c: 85:     serialIOload();
+[e ( _serialIOload ..  ]
+"86
+[; ;serialIO.c: 86: }
+[e :UE 152 ]
 }
-"88
-[; ;serialIO.c: 88: void initSerialIO( unsigned char * ptrIn, unsigned char * ptrOut, unsigned char length )
-[v _initSerialIO `(v ~T0 @X0 1 ef3`*uc`*uc`uc ]
 "89
-[; ;serialIO.c: 89: {
+[; ;serialIO.c: 89: void initSerialIO( unsigned char * ptrIn, unsigned char * ptrOut, unsigned char length )
+[v _initSerialIO `(v ~T0 @X0 1 ef3`*uc`*uc`uc ]
+"90
+[; ;serialIO.c: 90: {
 {
 [e :U _initSerialIO ]
-"88
-[; ;serialIO.c: 88: void initSerialIO( unsigned char * ptrIn, unsigned char * ptrOut, unsigned char length )
+"89
+[; ;serialIO.c: 89: void initSerialIO( unsigned char * ptrIn, unsigned char * ptrOut, unsigned char length )
 [v _ptrIn `*uc ~T0 @X0 1 r1 ]
 [v _ptrOut `*uc ~T0 @X0 1 r2 ]
 [v _length `uc ~T0 @X0 1 r3 ]
-"89
-[; ;serialIO.c: 89: {
-[f ]
 "90
-[; ;serialIO.c: 90:     ptrSerialIn = ptrIn;
-[e = _ptrSerialIn _ptrIn ]
+[; ;serialIO.c: 90: {
+[f ]
 "91
-[; ;serialIO.c: 91:     ptrSerialOut = ptrOut;
-[e = _ptrSerialOut _ptrOut ]
+[; ;serialIO.c: 91:     ptrSerialIn = ptrIn;
+[e = _ptrSerialIn _ptrIn ]
 "92
-[; ;serialIO.c: 92:     lenSerialIO = length;
+[; ;serialIO.c: 92:     ptrSerialOut = ptrOut;
+[e = _ptrSerialOut _ptrOut ]
+"93
+[; ;serialIO.c: 93:     lenSerialIO = length;
 [e = _lenSerialIO _length ]
-"94
-[; ;serialIO.c: 94:     PORTEbits.RE0 = 0;
-[e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
 "95
-[; ;serialIO.c: 95:     ANSELbits.ANS5 = 0;
-[e = . . _ANSELbits 0 5 -> -> 0 `i `uc ]
+[; ;serialIO.c: 95:     PORTEbits.RE0 = 0;
+[e = . . _PORTEbits 0 0 -> -> 0 `i `uc ]
 "96
-[; ;serialIO.c: 96:     TRISEbits.TRISE0 = 0;
+[; ;serialIO.c: 96:     ANSELbits.ANS5 = 0;
+[e = . . _ANSELbits 0 5 -> -> 0 `i `uc ]
+"97
+[; ;serialIO.c: 97:     TRISEbits.TRISE0 = 0;
 [e = . . _TRISEbits 0 0 -> -> 0 `i `uc ]
-"99
-[; ;serialIO.c: 99:     PORTEbits.RE1 = 0;
-[e = . . _PORTEbits 0 1 -> -> 0 `i `uc ]
 "100
-[; ;serialIO.c: 100:     ANSELbits.ANS6 = 0;
-[e = . . _ANSELbits 0 6 -> -> 0 `i `uc ]
+[; ;serialIO.c: 100:     PORTEbits.RE1 = 0;
+[e = . . _PORTEbits 0 1 -> -> 0 `i `uc ]
 "101
-[; ;serialIO.c: 101:     TRISEbits.TRISE1 = 0;
+[; ;serialIO.c: 101:     ANSELbits.ANS6 = 0;
+[e = . . _ANSELbits 0 6 -> -> 0 `i `uc ]
+"102
+[; ;serialIO.c: 102:     TRISEbits.TRISE1 = 0;
 [e = . . _TRISEbits 0 1 -> -> 0 `i `uc ]
-"104
-[; ;serialIO.c: 104:     PORTEbits.RE2 = 0;
-[e = . . _PORTEbits 0 2 -> -> 0 `i `uc ]
 "105
-[; ;serialIO.c: 105:     ANSELbits.ANS7 = 0;
-[e = . . _ANSELbits 0 7 -> -> 0 `i `uc ]
+[; ;serialIO.c: 105:     PORTEbits.RE2 = 0;
+[e = . . _PORTEbits 0 2 -> -> 0 `i `uc ]
 "106
-[; ;serialIO.c: 106:     TRISEbits.TRISE2 = 0;
+[; ;serialIO.c: 106:     ANSELbits.ANS7 = 0;
+[e = . . _ANSELbits 0 7 -> -> 0 `i `uc ]
+"107
+[; ;serialIO.c: 107:     TRISEbits.TRISE2 = 0;
 [e = . . _TRISEbits 0 2 -> -> 0 `i `uc ]
-"111
-[; ;serialIO.c: 111:     ANSELbits.ANS0 = 0;
-[e = . . _ANSELbits 0 0 -> -> 0 `i `uc ]
 "112
-[; ;serialIO.c: 112:     TRISAbits.TRISA0 = 1;
+[; ;serialIO.c: 112:     ANSELbits.ANS0 = 0;
+[e = . . _ANSELbits 0 0 -> -> 0 `i `uc ]
+"113
+[; ;serialIO.c: 113:     TRISAbits.TRISA0 = 1;
 [e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
-"116
-[; ;serialIO.c: 116:     SERIALIO.CLK = 0;
-[e = . . _SERIALIO 0 1 -> -> 0 `i `uc ]
 "117
-[; ;serialIO.c: 117:     SERIALIO.OUT = 0;
-[e = . . _SERIALIO 0 2 -> -> 0 `i `uc ]
+[; ;serialIO.c: 117:     SERIALIO.CLK = 0;
+[e = . . _SERIALIO 0 1 -> -> 0 `i `uc ]
 "118
-[; ;serialIO.c: 118:     SERIALIO.SHLD = 1;
-[e = . . _SERIALIO 0 0 -> -> 1 `i `uc ]
+[; ;serialIO.c: 118:     SERIALIO.OUT = 0;
+[e = . . _SERIALIO 0 2 -> -> 0 `i `uc ]
 "119
-[; ;serialIO.c: 119: }
-[e :UE 153 ]
+[; ;serialIO.c: 119:     SERIALIO.SHLD = 1;
+[e = . . _SERIALIO 0 0 -> -> 1 `i `uc ]
+"120
+[; ;serialIO.c: 120: }
+[e :UE 157 ]
 }

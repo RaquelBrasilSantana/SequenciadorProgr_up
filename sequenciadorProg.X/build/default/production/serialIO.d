@@ -1,1 +1,1 @@
-build/default/production\serialIO.p1: serialIO.c serialIO.h
+build/default/production\serialIO.p1: serialIO.c serialIO.h atuadores.h

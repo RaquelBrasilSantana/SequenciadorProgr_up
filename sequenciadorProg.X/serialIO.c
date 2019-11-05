@@ -19,6 +19,7 @@
 
 #include <xc.h>
 #include "serialIO.h"
+#include "atuadores.h"
 
 unsigned char * ptrSerialIn;
 unsigned char * ptrSerialOut;

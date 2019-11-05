@@ -2510,7 +2510,7 @@ unsigned char fifoTail = 0;
 void putFIFO( unsigned char c )
 {
     fifo[ fifoHead ] = c;
-    fifoHead = ++fifoHead;
+    ++fifoHead;
 }
 
 unsigned char getFIFO( void )
@@ -2520,7 +2520,7 @@ unsigned char getFIFO( void )
     if( fifoTail != fifoHead )
     {
         aux = fifo[ fifoTail ];
-        fifoTail = ++fifoTail;
+        ++fifoTail;
     }
     return( aux );
 }

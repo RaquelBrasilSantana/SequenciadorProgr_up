@@ -1,14 +1,14 @@
 ### HEXMate logfile and output summary ###
 ### Memory Usage ###
  Unused memory ranges:
-  32h - 17Fh
+  32h - 16Fh
   1000h - 3FFFh
   4000h - 400Dh
   4010h - 403Fh
   
  dist/default/production\sequenciadorProg.X.production.hex ranges:
   0h - 31h
-  180h - FFFh
+  170h - FFFh
   400Eh - 400Fh
   
 ### Hex Memory Map ###
@@ -24,6 +24,7 @@
   X = Find & delete opcode
   1 = dist/default/production\sequenciadorProg.X.production.hex
 00000000: 11111111111111111111111111111111111111111111111111--------------
+00000140: ------------------------------------------------1111111111111111
 00000180: 1111111111111111111111111111111111111111111111111111111111111111
 000001C0: 1111111111111111111111111111111111111111111111111111111111111111
 00000200: 1111111111111111111111111111111111111111111111111111111111111111

@@ -374,8 +374,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;keyboard.c: 81:     {
 {
 "82
-[; ;keyboard.c: 82:         KEYBOARDbits.cols = (0x01<<j);
-[e = . . _KEYBOARDbits 0 1 -> << -> 1 `i -> _j `i `uc ]
+[; ;keyboard.c: 82:         KEYBOARDbits.cols = ~(0x01<<j);
+[e = . . _KEYBOARDbits 0 1 -> ~ << -> 1 `i -> _j `i `uc ]
 "83
 [; ;keyboard.c: 83:         for( i=0; i<4; i++ )
 {
@@ -387,8 +387,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;keyboard.c: 84:         {
 {
 "85
-[; ;keyboard.c: 85:             if( KEYBOARDbits.rows & (0x01<<i) )
-[e $ ! != & -> . . _KEYBOARDbits 0 0 `i << -> 1 `i -> _i `i -> 0 `i 149  ]
+[; ;keyboard.c: 85:             if( ~KEYBOARDbits.rows & (0x01<<i) )
+[e $ ! != & ~ -> . . _KEYBOARDbits 0 0 `i << -> 1 `i -> _i `i -> 0 `i 149  ]
 "86
 [; ;keyboard.c: 86:                 aux = keyboardMatrix[i][j];
 [e = _aux -> *U + &U *U + &U _keyboardMatrix * -> _i `ux -> * -> # *U &U *U &U _keyboardMatrix `ui -> -> 4 `i `ui `ux * -> _j `ux -> -> # *U &U *U + &U _keyboardMatrix * -> _i `ux -> * -> # *U &U *U &U _keyboardMatrix `ui -> -> 4 `i `ui `ux `ui `ux `uc ]
@@ -430,8 +430,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _initKeyboard ]
 [f ]
 "105
-[; ;keyboard.c: 105:     PORTB = 0;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;keyboard.c: 105:     PORTB = 0xFF;
+[e = _PORTB -> -> 255 `i `uc ]
 "106
 [; ;keyboard.c: 106:     ANSELH = 0;
 [e = _ANSELH -> -> 0 `i `uc ]
@@ -439,11 +439,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;keyboard.c: 107:     TRISB = 0x0F;
 [e = _TRISB -> -> 15 `i `uc ]
 "108
-[; ;keyboard.c: 108:     WPUB = 0x00;
-[e = _WPUB -> -> 0 `i `uc ]
+[; ;keyboard.c: 108:     WPUB = 0xFF;
+[e = _WPUB -> -> 255 `i `uc ]
 "109
-[; ;keyboard.c: 109:     OPTION_REGbits.nRBPU = 1;
-[e = . . _OPTION_REGbits 0 5 -> -> 1 `i `uc ]
+[; ;keyboard.c: 109:     OPTION_REGbits.nRBPU = 0;
+[e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
 "111
 [; ;keyboard.c: 111:     prevKey = 0;
 [e = _prevKey -> -> 0 `i `uc ]

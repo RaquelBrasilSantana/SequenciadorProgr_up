@@ -2498,6 +2498,35 @@ extern __bank0 __bit __timeout;
 void initSerialIO( unsigned char * ptrIn, unsigned char * ptrOut, unsigned char length );
 void serialIOscan( void );
 # 22 "serialIO.c" 2
+# 1 "./atuadores.h" 1
+# 11 "./atuadores.h"
+typedef union
+{
+    struct
+    {
+        unsigned char A :1;
+        unsigned char B :1;
+        unsigned char C :1;
+        unsigned char D :1;
+    };
+    unsigned char ABCD;
+} ATUADORESbits_t;
+
+typedef union
+{
+    struct
+    {
+        unsigned char A1 :1;
+        unsigned char A0 :1;
+        unsigned char B1 :1;
+        unsigned char B0 :1;
+        unsigned char C1 :1;
+        unsigned char C0 :1;
+        unsigned char D1 :1;
+        unsigned char D0 :1;
+    };
+} SENSORESbits_t;
+# 23 "serialIO.c" 2
 
 unsigned char * ptrSerialIn;
 unsigned char * ptrSerialOut;

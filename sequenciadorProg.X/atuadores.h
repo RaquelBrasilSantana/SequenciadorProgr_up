@@ -24,24 +24,16 @@ typedef union
 {
     struct
     {
-        unsigned char A0 :1;
-        unsigned char B0 :1;
-        unsigned char C0 :1;
-        unsigned char D0 :1;
         unsigned char A1 :1;
+        unsigned char A0 :1;
         unsigned char B1 :1;
+        unsigned char B0 :1;
         unsigned char C1 :1;
+        unsigned char C0 :1;
         unsigned char D1 :1;
-    };
-    struct
-    {
-        unsigned char ABCD0:4;
-        unsigned char ABCD1:4;
+        unsigned char D0 :1; 
     };
 } SENSORESbits_t;
-
-
-
 
 #endif	/* ATUADORES_H */
 

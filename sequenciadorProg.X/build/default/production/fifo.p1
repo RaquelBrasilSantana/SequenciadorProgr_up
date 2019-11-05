@@ -265,8 +265,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;fifo.c: 19:     fifo[ fifoHead ] = c;
 [e = *U + &U _fifo * -> _fifoHead `ux -> -> # *U &U _fifo `ui `ux _c ]
 "20
-[; ;fifo.c: 20:     fifoHead = ++fifoHead;
-[e = _fifoHead =+ _fifoHead -> -> 1 `i `uc ]
+[; ;fifo.c: 20:     ++fifoHead;
+[e =+ _fifoHead -> -> 1 `i `uc ]
 "21
 [; ;fifo.c: 21: }
 [e :UE 138 ]
@@ -293,8 +293,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;fifo.c: 29:         aux = fifo[ fifoTail ];
 [e = _aux *U + &U _fifo * -> _fifoTail `ux -> -> # *U &U _fifo `ui `ux ]
 "30
-[; ;fifo.c: 30:         fifoTail = ++fifoTail;
-[e = _fifoTail =+ _fifoTail -> -> 1 `i `uc ]
+[; ;fifo.c: 30:         ++fifoTail;
+[e =+ _fifoTail -> -> 1 `i `uc ]
 "31
 [; ;fifo.c: 31:     }
 }

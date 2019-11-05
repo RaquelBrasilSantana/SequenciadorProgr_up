@@ -79,10 +79,10 @@ unsigned char keyboardScan( void )
     
     for( j=0; j<4; j++ )
     {
-        KEYBOARDbits.cols = (0x01<<j);
+        KEYBOARDbits.cols = ~(0x01<<j);
         for( i=0; i<4; i++ )
         {
-            if( KEYBOARDbits.rows & (0x01<<i) )
+            if( ~KEYBOARDbits.rows & (0x01<<i) )
                 aux = keyboardMatrix[i][j];
         }
     }
@@ -102,11 +102,11 @@ unsigned char keyboardScan( void )
  */
 void initKeyboard( void )
 {
-    PORTB = 0;
+    PORTB = 0xFF;
     ANSELH  = 0;
     TRISB = 0x0F;
-    WPUB = 0x00;
-    OPTION_REGbits.nRBPU = 1;
+    WPUB = 0xFF;
+    OPTION_REGbits.nRBPU = 0;
 
     prevKey = 0;
     currKey = 0;

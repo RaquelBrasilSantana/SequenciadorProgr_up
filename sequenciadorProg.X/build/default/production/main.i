@@ -2501,7 +2501,33 @@ extern __bank0 __bit __timeout;
 #pragma config LVP = OFF
 # 41 "main.c" 2
 # 1 "./lcd4bitBus.h" 1
-# 14 "./lcd4bitBus.h"
+# 11 "./lcd4bitBus.h"
+typedef union
+{
+    struct
+    {
+        unsigned char P0 :1;
+        unsigned char P1 :1;
+        unsigned char P2 :1;
+        unsigned char P3 :1;
+        unsigned char P4 :1;
+        unsigned char P5 :1;
+        unsigned char P6 :1;
+        unsigned char P7 :1;
+        unsigned char P8 :1;
+        unsigned char P9 :1;
+        unsigned char P10 :1;
+        unsigned char P11 :1;
+        unsigned char P12 :1;
+        unsigned char P13 :1;
+        unsigned char P14 :1;
+        unsigned char P15 :1;
+    };
+
+} forLcd_t;
+
+
+
 void initLCD( void );
 void intTOstr( int ui16, char * str );
 void lcd( unsigned char x, unsigned char y, const char * ptr );
@@ -2509,7 +2535,9 @@ void lcdxy( unsigned char x, unsigned char y );
 void lcddat( unsigned char dat );
 void lcdcmd( unsigned char cmd );
 void clearLCD( void );
-
+void screen_car (void);
+void screen_menu (void);
+void screen_monitor (void);
 
 
 
@@ -2579,8 +2607,10 @@ void main(void)
     SENSORESbits_t sensor;
     ATUADORESbits_t atuador;
     int estado = 0;
+    forLcd_t screenDisp[16];
 
     initLCD();
+    screen_car();
     initKeyboard();
     initSerialIO( &sensor, &atuador, 1 );
 
@@ -2588,48 +2618,49 @@ void main(void)
     {
 
         keyboardScan();
+        screen_menu();
 
         switch( estado )
         {
             case 0:
-
+                    estado = 10;
                     break;
             case 10:
-                        rest = getFIFO();
-                        if( rest == 'A' )
-                            estado = 100;
-                        else if( rest == 'B' )
-                            estado = 110;
-                        else if( rest == 'C' )
-                            estado = 120;
-                        else if( rest == 'D' )
-                            estado = 130;
-                        else if( rest == '1' )
-                            estado = 140;
-                        else if( rest == '2' )
-                            estado = 150;
-                        else if( rest == '3' )
-                            estado = 160;
-                        else if( rest == '4' )
-                            estado = 170;
-                        else if( rest == '5' )
-                            estado = 180;
-                        else if( rest == '6' )
-                            estado = 190;
-                        else if( rest == '7' )
-                            estado = 200;
-                        else if( rest == '8' )
-                            estado = 210;
-                        else if( rest == '9' )
-                            estado = 220;
-                        else if( rest == 'a' )
-                            estado = 230;
-                        else if( rest == 'b' )
-                            estado = 240;
-                        else if( rest == 'c' )
-                            estado = 250;
-                        else if( rest == 'd' )
-                            estado = 260;
+                    rest = getFIFO();
+                    if( rest == 'A' )
+                        estado = 100;
+                    else if( rest == 'B' )
+                        estado = 110;
+                    else if( rest == 'C' )
+                        estado = 120;
+                    else if( rest == 'D' )
+                        estado = 130;
+                    else if( rest == '1' )
+                        estado = 140;
+                    else if( rest == '2' )
+                        estado = 150;
+                    else if( rest == '3' )
+                        estado = 160;
+                    else if( rest == '4' )
+                        estado = 170;
+                    else if( rest == '5' )
+                        estado = 180;
+                    else if( rest == '6' )
+                        estado = 190;
+                    else if( rest == '7' )
+                        estado = 200;
+                    else if( rest == '8' )
+                        estado = 210;
+                    else if( rest == '9' )
+                        estado = 220;
+                    else if( rest == 'a' )
+                        estado = 230;
+                    else if( rest == 'b' )
+                        estado = 240;
+                    else if( rest == 'c' )
+                        estado = 250;
+                    else if( rest == 'd' )
+                        estado = 260;
                     break;
             case 100:
                     atuador.A = 1;
@@ -2825,10 +2856,10 @@ void main(void)
                         clearLCD();
                         break;
                 case '#':
-                        estado = 10;
+                        estado = 0;
                         break;
             }
-            lcd(0,0, displayFIFO() );
+            lcd(0,1, displayFIFO() );
 
         }
         serialIOscan();

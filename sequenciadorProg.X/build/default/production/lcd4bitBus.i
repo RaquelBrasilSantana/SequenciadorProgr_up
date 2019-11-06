@@ -2503,7 +2503,33 @@ extern __bank0 __bit __timeout;
 # 25 "lcd4bitBus.c" 2
 
 # 1 "./lcd4bitBus.h" 1
-# 14 "./lcd4bitBus.h"
+# 11 "./lcd4bitBus.h"
+typedef union
+{
+    struct
+    {
+        unsigned char P0 :1;
+        unsigned char P1 :1;
+        unsigned char P2 :1;
+        unsigned char P3 :1;
+        unsigned char P4 :1;
+        unsigned char P5 :1;
+        unsigned char P6 :1;
+        unsigned char P7 :1;
+        unsigned char P8 :1;
+        unsigned char P9 :1;
+        unsigned char P10 :1;
+        unsigned char P11 :1;
+        unsigned char P12 :1;
+        unsigned char P13 :1;
+        unsigned char P14 :1;
+        unsigned char P15 :1;
+    };
+
+} forLcd_t;
+
+
+
 void initLCD( void );
 void intTOstr( int ui16, char * str );
 void lcd( unsigned char x, unsigned char y, const char * ptr );
@@ -2511,14 +2537,27 @@ void lcdxy( unsigned char x, unsigned char y );
 void lcddat( unsigned char dat );
 void lcdcmd( unsigned char cmd );
 void clearLCD( void );
-
+void screen_car (void);
+void screen_menu (void);
+void screen_monitor (void);
 
 
 
 char lcdb0( void );
 char lcdb1( void );
 # 26 "lcd4bitBus.c" 2
-# 83 "lcd4bitBus.c"
+
+# 1 "./fifo.h" 1
+
+
+
+void putFIFO( unsigned char c );
+unsigned char getFIFO( void );
+unsigned char statusFIFO( void );
+void * displayFIFO( void );
+unsigned char delFIFO( unsigned char n );
+# 27 "lcd4bitBus.c" 2
+# 84 "lcd4bitBus.c"
 typedef union
 {
     struct
@@ -2543,7 +2582,7 @@ typedef union
 } LCDbits_t;
 
 volatile LCDbits_t LCDbits __attribute__((address(0x008)));
-# 115 "lcd4bitBus.c"
+# 116 "lcd4bitBus.c"
 void lcdcmd( unsigned char cmd )
 {
     volatile REGnibble_t nibble;
@@ -2595,19 +2634,44 @@ void lcddat( unsigned char dat )
     _delay((unsigned long)((40)*(4000000/4000000.0)));
     LCDbits.EN = 1;
 }
-# 174 "lcd4bitBus.c"
+# 175 "lcd4bitBus.c"
 void lcdxy( unsigned char x, unsigned char y )
 {
     lcdcmd( (0x80+((0x40 * y) + (x + 0x00) & 0x7F)) );
 }
-# 188 "lcd4bitBus.c"
+# 189 "lcd4bitBus.c"
 void lcd( unsigned char x, unsigned char y, const char * ptr )
 {
     lcdxy(x,y);
     while( *ptr )
         lcddat( *ptr++ );
 }
-# 203 "lcd4bitBus.c"
+
+void screen_car (void)
+{
+    lcd(2,0,"SEQUENCIADOR");
+    _delay((unsigned long)((200)*(4000000/4000.0)));
+    lcd(2,1,"PROGRAMAVEL");
+    _delay((unsigned long)((2000)*(4000000/4000.0)));
+    clearLCD();
+}
+
+void screen_menu (void)
+{
+    lcd(0,0,"INSIRA A SEQUEN.");
+}
+
+void screen_monitor (void)
+{
+    lcd(0,0,"TEMPO REAL:");
+}
+
+
+
+
+
+
+
 void intTOstr( int ui16, char * str )
 {
     for(int div=10000; div>=1; div/=10 )
@@ -2618,7 +2682,7 @@ void intTOstr( int ui16, char * str )
     }
     *str = 0;
 }
-# 221 "lcd4bitBus.c"
+# 239 "lcd4bitBus.c"
 char lcdb0( void )
 {
     return( LCDbits.B0 );
@@ -2649,25 +2713,14 @@ void initLCD( void )
     LCDbits.EN = 1;
     TRISD = 0xC0;
 
-    _delay((unsigned long)((1000)*(4000000/4000.0)));
+    _delay((unsigned long)((10)*(4000000/4000.0)));
     lcdcmd(0x20 | 0x00 );
     _delay((unsigned long)((1000/4)*(4000000/4000.0)));
     lcdcmd(0x20 | 0x08 );
     _delay((unsigned long)((1000/4)*(4000000/4000.0)));
     lcdcmd(0x08 | 0x04 );
     _delay((unsigned long)((1000/4)*(4000000/4000.0)));
-
-    for( j=0; j<2; j++ )
-    {
-        for( i=0; i<16; i++ )
-        {
-            lcdxy(i,j);
-            lcddat( 0xFF );
-            _delay((unsigned long)((1000/(2*16))*(4000000/4000.0)));
-        }
-    }
-
-    _delay((unsigned long)((1000)*(4000000/4000.0)));
+# 288 "lcd4bitBus.c"
     lcdcmd( 0x01 );
     lcdcmd( 0x02 );
 
@@ -2677,4 +2730,12 @@ void initLCD( void )
 void clearLCD( void )
 {
     lcdcmd(0x01);
+}
+
+void fifo2lcd ( char passo )
+{
+    char before;
+    before = getFIFO();
+
+
 }

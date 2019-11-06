@@ -24,6 +24,7 @@
 #include <xc.h>
 #include "config.h"
 #include "lcd4bitBus.h"
+#include "fifo.h"
 
 
 //***************** Interface com PORTs/Pinos
@@ -192,7 +193,24 @@ void lcd( unsigned char x, unsigned char y, const char * ptr )
         lcddat( *ptr++ );
 }
 
+void screen_car (void)
+{
+    lcd(2,0,"SEQUENCIADOR");
+    __delay_ms(200);
+    lcd(2,1,"PROGRAMAVEL");
+    __delay_ms(2000);
+    clearLCD();
+}
 
+void screen_menu (void)
+{
+    lcd(0,0,"INSIRA A SEQUEN.");
+}
+
+void screen_monitor (void)
+{
+    lcd(0,0,"TEMPO REAL:");
+}
 
 /****************** Procedimento intTOstr
  * Entrada: ui16: Número a ser convertido em String.
@@ -248,7 +266,7 @@ void initLCD( void )
     LCD_EN = 1;
     TRISD = 0xC0;
 
-    __delay_ms(1000);
+    __delay_ms(10);
     lcdcmd(LCD_FUNCTION_SET | LCD_FS_DATA_LENGTH_4 );
     __delay_ms(1000/4);
     lcdcmd(LCD_FUNCTION_SET | LCD_FS_LINE_NUMBER_2 );
@@ -256,17 +274,17 @@ void initLCD( void )
     lcdcmd(LCD_DISPLAY_CONTROL | LCD_DC_DISPLAY_ON );
     __delay_ms(1000/4);
 
-    for( j=0; j<LCD_ROWS; j++ )
-    {
-        for( i=0; i<LCD_COLS; i++ )
-        {
-            lcdxy(i,j); 
-            lcddat( 0xFF );
-            __delay_ms(1000/(LCD_ROWS*LCD_COLS));
-        }
-    }
+//    for( j=0; j<LCD_ROWS; j++ )
+//    {
+//        for( i=0; i<LCD_COLS; i++ )
+//        {
+//            lcdxy(i,j); 
+//            lcddat( 0xFF );
+//            __delay_ms(1000/(LCD_ROWS*LCD_COLS));
+//        }
+//    }
     
-    __delay_ms(1000);
+//    __delay_ms(1000);
     lcdcmd( LCD_CLEAR_DISPLAY );
     lcdcmd( LCD_RETURN_HOME );
 
@@ -276,4 +294,12 @@ void initLCD( void )
 void clearLCD( void )
 {
     lcdcmd(0x01);
+}
+
+void fifo2lcd ( char passo )
+{
+    char before;
+    before = getFIFO(); 
+    
+    
 }

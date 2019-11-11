@@ -2500,49 +2500,39 @@ extern __bank0 __bit __timeout;
 #pragma config MCLRE = OFF
 #pragma config LVP = OFF
 # 41 "main.c" 2
-# 1 "./lcd4bitBus.h" 1
-# 11 "./lcd4bitBus.h"
+# 1 "./lcd.h" 1
+# 11 "./lcd.h"
 typedef union
 {
     struct
     {
-        unsigned char P0 :1;
-        unsigned char P1 :1;
-        unsigned char P2 :1;
-        unsigned char P3 :1;
-        unsigned char P4 :1;
-        unsigned char P5 :1;
-        unsigned char P6 :1;
-        unsigned char P7 :1;
-        unsigned char P8 :1;
-        unsigned char P9 :1;
-        unsigned char P10 :1;
-        unsigned char P11 :1;
-        unsigned char P12 :1;
-        unsigned char P13 :1;
-        unsigned char P14 :1;
-        unsigned char P15 :1;
+        unsigned char LO :4;
+        unsigned char HI :4;
     };
+    unsigned char HILO;
+} REGnibble_t;
 
-} forLcd_t;
 
-
-
+typedef union
+{
+    struct
+    {
+        unsigned char BUS : 4;
+        unsigned char RS : 1;
+        unsigned char EN : 1;
+        unsigned char B0 : 1;
+        unsigned char B1 : 1;
+    };
+} LCDbits_t;
+# 73 "./lcd.h"
+void cmdLCD( unsigned char cmd );
+void putLCD( unsigned char c );
+void gotoxy( unsigned char x, unsigned char y );
+void writeLCD( unsigned char x, unsigned char y, const char * ptr );
 void initLCD( void );
-void intTOstr( int ui16, char * str );
-void lcd( unsigned char x, unsigned char y, const char * ptr );
-void lcdxy( unsigned char x, unsigned char y );
-void lcddat( unsigned char dat );
-void lcdcmd( unsigned char cmd );
+char lcdb0 (void);
+char lcdb1 (void);
 void clearLCD( void );
-void screen_car (void);
-void screen_menu (void);
-void screen_monitor (void);
-
-
-
-char lcdb0( void );
-char lcdb1( void );
 # 42 "main.c" 2
 # 1 "./keyboard.h" 1
 
@@ -2586,14 +2576,14 @@ typedef union
 {
     struct
     {
-        unsigned char A1 :1;
         unsigned char A0 :1;
-        unsigned char B1 :1;
+        unsigned char A1 :1;
         unsigned char B0 :1;
-        unsigned char C1 :1;
+        unsigned char B1 :1;
         unsigned char C0 :1;
-        unsigned char D1 :1;
+        unsigned char C1 :1;
         unsigned char D0 :1;
+        unsigned char D1 :1;
     };
 } SENSORESbits_t;
 # 46 "main.c" 2
@@ -2607,23 +2597,19 @@ void main(void)
     SENSORESbits_t sensor;
     ATUADORESbits_t atuador;
     int estado = 0;
-    forLcd_t screenDisp[16];
+
 
     initLCD();
-    screen_car();
     initKeyboard();
     initSerialIO( &sensor, &atuador, 1 );
 
     while( 1 )
     {
-
         keyboardScan();
-        screen_menu();
-
         switch( estado )
         {
             case 0:
-                    estado = 10;
+
                     break;
             case 10:
                     rest = getFIFO();
@@ -2856,11 +2842,10 @@ void main(void)
                         clearLCD();
                         break;
                 case '#':
-                        estado = 0;
+                        estado = 10;
                         break;
             }
-            lcd(0,1, displayFIFO() );
-
+            writeLCD(0,0, displayFIFO() );
         }
         serialIOscan();
     }

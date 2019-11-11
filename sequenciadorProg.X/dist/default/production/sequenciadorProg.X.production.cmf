@@ -13,34 +13,32 @@
 %PSECTS
 $dist/default/production\sequenciadorProg.X.production.o
 cinit CODE 0 7F1 7F1 F 2
-text1 CODE 0 235 235 3D 2
-text2 CODE 0 B3 B3 5 2
-text3 CODE 0 169 169 2B 2
-text4 CODE 0 C7 C7 C 2
-text5 CODE 0 1FB 1FB 3A 2
-text6 CODE 0 194 194 33 2
-text7 CODE 0 F4 F4 13 2
-text8 CODE 0 13F 13F 2A 2
-text9 CODE 0 B8 B8 7 2
-text10 CODE 0 D3 D3 E 2
-text11 CODE 0 AE AE 5 2
-text12 CODE 0 32A 32A 7F 2
-text13 CODE 0 1C7 1C7 34 2
-text14 CODE 0 272 272 59 2
-text15 CODE 0 2CB 2CB 5F 2
-text16 CODE 0 E1 E1 13 2
-text17 CODE 0 107 107 17 2
-text18 CODE 0 A6 A6 3 2
-text19 CODE 0 11E 11E 21 2
-text20 CODE 0 A9 A9 5 2
-maintext CODE 0 3A9 3A9 448 2
+text1 CODE 0 1A6 1A6 24 2
+text2 CODE 0 229 229 34 2
+text3 CODE 0 16D 16D 18 2
+text4 CODE 0 25D 25D 3D 2
+text5 CODE 0 121 121 5 2
+text6 CODE 0 1CA 1CA 2B 2
+text7 CODE 0 135 135 E 2
+text8 CODE 0 11C 11C 5 2
+text9 CODE 0 338 338 7F 2
+text10 CODE 0 1F5 1F5 34 2
+text11 CODE 0 29A 29A 3F 2
+text12 CODE 0 143 143 13 2
+text13 CODE 0 156 156 17 2
+text14 CODE 0 114 114 3 2
+text15 CODE 0 185 185 21 2
+text16 CODE 0 117 117 5 2
+text17 CODE 0 126 126 7 2
+text18 CODE 0 2D9 2D9 5F 2
+maintext CODE 0 3B7 3B7 43A 2
 cstackCOMMON COMMON 1 70 70 C 1
-cstackBANK0 BANK0 1 35 35 10 1
+cstackBANK0 BANK0 1 35 35 D 1
 bssBANK0 BANK0 1 20 20 15 1
-strings STRING 0 3 3 56 2
-clrtext CODE 0 BF BF 8 2
+strings STRING 0 3 3 16 2
+clrtext CODE 0 12D 12D 8 2
 bssCOMMON COMMON 1 7C 7C 2 1
-$C:\Users\18263814\AppData\Local\Temp\s4sg.o
+$C:\Users\18175218\AppData\Local\Temp\s3r0.o
 end_init CODE 0 0 0 3 2
 config CONFIG 0 2007 2007 1 2
 # %UNUSED Section
@@ -49,21 +47,21 @@ config CONFIG 0 2007 2007 1 2
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 45-6F 1
+RAM 42-6F 1
 RAM A0-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 45-6F 1
+BANK0 42-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 59-A5 2
+CONST 19-113 2
 CONST 800-1FFF 2
-ENTRY 59-A5 2
+ENTRY 19-113 2
 ENTRY 800-1FFF 2
 IDLOC 2000-2003 2
 STACK 110-16F 1
-CODE 59-A5 2
+CODE 19-113 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -71,9 +69,9 @@ SFR2 100-10F 1
 SFR3 180-18F 1
 CONFIG 2008-2008 2
 EEDATA 2100-21FF 2
-STRCODE 59-A5 2
+STRCODE 19-113 2
 STRCODE 800-1FFF 2
-STRING 59-A5 2
+STRING 19-113 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -89,451 +87,438 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\sequenciadorProg.X.production.o
-7F1 cinit CODE >1373:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7F1 cinit CODE >1376:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7F1 cinit CODE >1426:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7F2 cinit CODE >1427:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7F3 cinit CODE >1430:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7F4 cinit CODE >1431:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7F5 cinit CODE >1432:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7F6 cinit CODE >1433:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7F7 cinit CODE >1434:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7FC cinit CODE >1440:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7FC cinit CODE >1442:C:\Users\18263814\AppData\Local\Temp\s4sg.
-7FD cinit CODE >1443:C:\Users\18263814\AppData\Local\Temp\s4sg.
-A9 text20 CODE >65:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-A9 text20 CODE >67:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-AD text20 CODE >68:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-11E text19 CODE >45:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-11F text19 CODE >48:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-120 text19 CODE >50:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-122 text19 CODE >51:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-12A text19 CODE >52:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-12E text19 CODE >53:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-130 text19 CODE >48:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-130 text19 CODE >54:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-13C text19 CODE >55:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-13E text19 CODE >56:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-A6 text18 CODE >40:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-A6 text18 CODE >42:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-A8 text18 CODE >43:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-107 text17 CODE >23:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-107 text17 CODE >25:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-108 text17 CODE >27:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-10E text17 CODE >29:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-116 text17 CODE >30:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-11B text17 CODE >31:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-11B text17 CODE >32:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-11D text17 CODE >33:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-E1 text16 CODE >103:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-E1 text16 CODE >105:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-E5 text16 CODE >106:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-E8 text16 CODE >107:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-EC text16 CODE >108:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-EE text16 CODE >109:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-EF text16 CODE >111:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-F2 text16 CODE >112:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-F3 text16 CODE >113:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-2CB text15 CODE >116:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2CC text15 CODE >120:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2D0 text15 CODE >121:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2D3 text15 CODE >122:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2DB text15 CODE >124:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2DC text15 CODE >125:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2E8 text15 CODE >126:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2F2 text15 CODE >127:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2F2 text15 CODE >128:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2F7 text15 CODE >129:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2FA text15 CODE >132:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-300 text15 CODE >134:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-301 text15 CODE >135:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-309 text15 CODE >136:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-30A text15 CODE >137:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-316 text15 CODE >138:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-320 text15 CODE >139:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-320 text15 CODE >140:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-325 text15 CODE >141:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-329 text15 CODE >142:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-329 text15 CODE >143:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-272 text14 CODE >261:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-272 text14 CODE >264:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-276 text14 CODE >265:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-277 text14 CODE >266:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-278 text14 CODE >267:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-27C text14 CODE >269:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-285 text14 CODE >270:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-28B text14 CODE >271:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-298 text14 CODE >272:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-29E text14 CODE >273:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2AB text14 CODE >274:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2B1 text14 CODE >275:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2BE text14 CODE >288:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2C4 text14 CODE >289:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-2CA text14 CODE >292:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-1C7 text13 CODE >89:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1C8 text13 CODE >91:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1CE text13 CODE >92:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1D2 text13 CODE >93:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1D6 text13 CODE >95:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1D7 text13 CODE >96:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1DA text13 CODE >97:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1DD text13 CODE >100:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1E0 text13 CODE >101:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1E3 text13 CODE >102:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1E6 text13 CODE >105:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1E9 text13 CODE >106:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1EC text13 CODE >107:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1EF text13 CODE >112:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1F2 text13 CODE >113:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1F5 text13 CODE >117:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1F8 text13 CODE >118:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1F9 text13 CODE >119:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-1FA text13 CODE >120:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-32A text12 CODE >75:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-32A text12 CODE >78:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-32B text12 CODE >80:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-334 text12 CODE >82:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-348 text12 CODE >83:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-351 text12 CODE >85:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-370 text12 CODE >86:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-387 text12 CODE >87:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-392 text12 CODE >88:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-39D text12 CODE >90:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-3A3 text12 CODE >91:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-3A8 text12 CODE >93:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-3A8 text12 CODE >94:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-AE text11 CODE >55:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-AE text11 CODE >57:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-B2 text11 CODE >58:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\keyboard.c
-D3 text10 CODE >17:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-D4 text10 CODE >19:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-DC text10 CODE >20:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-E0 text10 CODE >21:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\fifo.c
-B8 text9 CODE >294:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-B8 text9 CODE >296:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-BE text9 CODE >297:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-13F text8 CODE >150:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-140 text8 CODE >153:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-144 text8 CODE >155:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-147 text8 CODE >156:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-14F text8 CODE >157:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-150 text8 CODE >158:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-154 text8 CODE >159:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-157 text8 CODE >161:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-158 text8 CODE >162:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-160 text8 CODE >163:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-161 text8 CODE >164:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-165 text8 CODE >165:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-168 text8 CODE >166:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-F4 text7 CODE >175:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-F5 text7 CODE >177:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-106 text7 CODE >178:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-194 text6 CODE >189:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-195 text6 CODE >191:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-19F text6 CODE >192:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-1A0 text6 CODE >193:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-1B5 text6 CODE >192:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-1C6 text6 CODE >194:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-1FB text5 CODE >196:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-1FB text5 CODE >198:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-206 text5 CODE >199:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-215 text5 CODE >200:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-221 text5 CODE >201:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-22F text5 CODE >202:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-234 text5 CODE >203:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-C7 text4 CODE >205:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-C7 text4 CODE >207:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-D2 text4 CODE >208:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\lcd4bitBus.c
-169 text3 CODE >50:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-16A text3 CODE >55:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-16E text3 CODE >56:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-16F text3 CODE >58:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-170 text3 CODE >60:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-173 text3 CODE >61:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-179 text3 CODE >62:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-17B text3 CODE >63:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-17B text3 CODE >64:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-17C text3 CODE >66:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-180 text3 CODE >67:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-185 text3 CODE >68:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-186 text3 CODE >69:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-189 text3 CODE >58:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-189 text3 CODE >70:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-18E text3 CODE >71:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-191 text3 CODE >72:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-193 text3 CODE >73:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-B3 text2 CODE >45:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-B3 text2 CODE >47:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-B6 text2 CODE >48:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-B7 text2 CODE >49:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-235 text1 CODE >76:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-235 text1 CODE >79:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-23C text1 CODE >80:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-241 text1 CODE >81:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-243 text1 CODE >83:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-25E text1 CODE >84:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-26C text1 CODE >85:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-271 text1 CODE >86:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\serialIO.c
-3A9 maintext CODE >48:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3A9 maintext CODE >50:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3AC maintext CODE >51:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3AD maintext CODE >52:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3AE maintext CODE >55:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3B0 maintext CODE >58:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3B5 maintext CODE >59:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3BA maintext CODE >60:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3BF maintext CODE >61:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3CE maintext CODE >63:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3CE maintext CODE >66:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3D3 maintext CODE >67:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3D8 maintext CODE >69:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3D9 maintext CODE >71:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3D9 maintext CODE >72:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3DF maintext CODE >73:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3E0 maintext CODE >74:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3E0 maintext CODE >75:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3EA maintext CODE >76:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3F0 maintext CODE >77:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3F5 maintext CODE >78:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-3FB maintext CODE >79:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-400 maintext CODE >80:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-406 maintext CODE >81:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-40B maintext CODE >82:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-411 maintext CODE >83:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-416 maintext CODE >84:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-41C maintext CODE >85:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-421 maintext CODE >86:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-427 maintext CODE >87:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-42C maintext CODE >88:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-432 maintext CODE >89:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-437 maintext CODE >90:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-43D maintext CODE >91:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-442 maintext CODE >92:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-448 maintext CODE >93:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-44D maintext CODE >94:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-453 maintext CODE >95:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-458 maintext CODE >96:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-45E maintext CODE >97:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-463 maintext CODE >98:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-469 maintext CODE >99:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-46E maintext CODE >100:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-474 maintext CODE >101:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-479 maintext CODE >102:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-47F maintext CODE >103:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-484 maintext CODE >104:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-48A maintext CODE >105:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-48F maintext CODE >106:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-495 maintext CODE >107:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-49A maintext CODE >108:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4A0 maintext CODE >109:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4B5 maintext CODE >110:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4B6 maintext CODE >111:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4B6 maintext CODE >112:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4B7 maintext CODE >113:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4BB maintext CODE >114:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4BC maintext CODE >115:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4BC maintext CODE >116:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4C0 maintext CODE >117:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4C5 maintext CODE >118:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4C6 maintext CODE >119:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4C6 maintext CODE >120:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4C7 maintext CODE >121:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4CB maintext CODE >122:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4CC maintext CODE >123:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4CC maintext CODE >124:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4D0 maintext CODE >125:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4D5 maintext CODE >126:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4D6 maintext CODE >127:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4D6 maintext CODE >128:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4D7 maintext CODE >129:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4DB maintext CODE >130:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4DC maintext CODE >131:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4DC maintext CODE >132:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4E0 maintext CODE >133:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4E5 maintext CODE >134:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4E6 maintext CODE >135:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4E6 maintext CODE >136:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4E7 maintext CODE >137:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4EB maintext CODE >138:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4EC maintext CODE >139:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4EC maintext CODE >140:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4F0 maintext CODE >141:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4F5 maintext CODE >142:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4F6 maintext CODE >143:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-4F6 maintext CODE >144:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-504 maintext CODE >145:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-50A maintext CODE >146:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-50B maintext CODE >147:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-50B maintext CODE >148:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-50F maintext CODE >149:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-510 maintext CODE >150:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-510 maintext CODE >151:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-51E maintext CODE >152:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-524 maintext CODE >153:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-525 maintext CODE >154:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-525 maintext CODE >155:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-529 maintext CODE >156:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-52A maintext CODE >157:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-52A maintext CODE >158:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-538 maintext CODE >159:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-53E maintext CODE >160:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-53F maintext CODE >161:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-53F maintext CODE >162:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-543 maintext CODE >163:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-544 maintext CODE >164:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-544 maintext CODE >165:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-553 maintext CODE >166:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-559 maintext CODE >167:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-55A maintext CODE >168:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-55A maintext CODE >169:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-55E maintext CODE >170:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-55F maintext CODE >171:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-55F maintext CODE >172:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-56E maintext CODE >173:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-574 maintext CODE >174:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-575 maintext CODE >175:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-575 maintext CODE >176:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-579 maintext CODE >177:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-57A maintext CODE >178:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-57A maintext CODE >179:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-589 maintext CODE >180:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-58F maintext CODE >181:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-590 maintext CODE >182:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-590 maintext CODE >183:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-594 maintext CODE >184:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-595 maintext CODE >185:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-595 maintext CODE >186:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5A4 maintext CODE >187:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5AA maintext CODE >188:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5AB maintext CODE >189:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5AB maintext CODE >190:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5AF maintext CODE >191:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5B0 maintext CODE >192:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5B0 maintext CODE >193:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5BF maintext CODE >194:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5C5 maintext CODE >195:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5C6 maintext CODE >196:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5C6 maintext CODE >197:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5CA maintext CODE >198:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5CB maintext CODE >199:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5CB maintext CODE >200:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5DA maintext CODE >201:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5E0 maintext CODE >202:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5E1 maintext CODE >203:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5E1 maintext CODE >204:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5E5 maintext CODE >205:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5E6 maintext CODE >207:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5E6 maintext CODE >208:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5E7 maintext CODE >209:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5EB maintext CODE >210:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5EC maintext CODE >211:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5EC maintext CODE >212:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5F0 maintext CODE >213:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5F5 maintext CODE >214:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5F6 maintext CODE >215:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5F6 maintext CODE >216:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5F7 maintext CODE >217:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5FB maintext CODE >218:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5FC maintext CODE >219:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-5FC maintext CODE >220:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-600 maintext CODE >221:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-605 maintext CODE >222:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-606 maintext CODE >223:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-606 maintext CODE >224:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-607 maintext CODE >225:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-60B maintext CODE >226:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-60C maintext CODE >227:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-60C maintext CODE >228:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-610 maintext CODE >229:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-615 maintext CODE >230:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-616 maintext CODE >231:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-616 maintext CODE >232:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-617 maintext CODE >233:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-61B maintext CODE >234:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-61C maintext CODE >235:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-61C maintext CODE >236:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-620 maintext CODE >237:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-625 maintext CODE >238:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-626 maintext CODE >240:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6A1 maintext CODE >241:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6B5 maintext CODE >243:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6BF maintext CODE >244:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6C0 maintext CODE >246:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6C0 maintext CODE >247:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6C4 maintext CODE >248:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6C8 maintext CODE >249:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6CF maintext CODE >250:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6CF maintext CODE >251:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6D9 maintext CODE >252:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6DA maintext CODE >253:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6DA maintext CODE >254:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6E0 maintext CODE >255:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6E4 maintext CODE >256:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6EB maintext CODE >257:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6EB maintext CODE >258:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6F5 maintext CODE >259:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6F6 maintext CODE >260:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6F6 maintext CODE >261:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-6FC maintext CODE >262:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-700 maintext CODE >263:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-707 maintext CODE >264:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-707 maintext CODE >265:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-711 maintext CODE >266:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-712 maintext CODE >267:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-712 maintext CODE >268:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-718 maintext CODE >269:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-71C maintext CODE >270:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-723 maintext CODE >271:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-723 maintext CODE >272:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-72D maintext CODE >273:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-72E maintext CODE >274:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-72E maintext CODE >275:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-734 maintext CODE >276:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-739 maintext CODE >277:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-73F maintext CODE >278:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-740 maintext CODE >279:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-741 maintext CODE >280:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-742 maintext CODE >281:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-743 maintext CODE >282:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-744 maintext CODE >283:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-745 maintext CODE >284:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-746 maintext CODE >285:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-747 maintext CODE >286:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-748 maintext CODE >287:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-748 maintext CODE >288:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-74E maintext CODE >289:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-74F maintext CODE >290:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-74F maintext CODE >291:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-750 maintext CODE >293:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-754 maintext CODE >294:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-757 maintext CODE >295:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-759 maintext CODE >296:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-75C maintext CODE >297:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-75E maintext CODE >298:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-761 maintext CODE >299:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-763 maintext CODE >300:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-766 maintext CODE >301:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-790 maintext CODE >302:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-795 maintext CODE >303:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-796 maintext CODE >304:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-796 maintext CODE >305:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-79A maintext CODE >306:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-79B maintext CODE >307:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-7D6 maintext CODE >308:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-7E7 maintext CODE >310:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-7E7 maintext CODE >311:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-7ED maintext CODE >312:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-7EE maintext CODE >313:Z:\tcc att\sequenciadorProg\sequenciadorProg.X\main.c
-BF clrtext CODE >1413:C:\Users\18263814\AppData\Local\Temp\s4sg.
-BF clrtext CODE >1414:C:\Users\18263814\AppData\Local\Temp\s4sg.
-C0 clrtext CODE >1415:C:\Users\18263814\AppData\Local\Temp\s4sg.
-C0 clrtext CODE >1416:C:\Users\18263814\AppData\Local\Temp\s4sg.
-C1 clrtext CODE >1417:C:\Users\18263814\AppData\Local\Temp\s4sg.
-C2 clrtext CODE >1418:C:\Users\18263814\AppData\Local\Temp\s4sg.
-C3 clrtext CODE >1419:C:\Users\18263814\AppData\Local\Temp\s4sg.
-C4 clrtext CODE >1420:C:\Users\18263814\AppData\Local\Temp\s4sg.
-C5 clrtext CODE >1421:C:\Users\18263814\AppData\Local\Temp\s4sg.
-C6 clrtext CODE >1422:C:\Users\18263814\AppData\Local\Temp\s4sg.
+7F1 cinit CODE >1292:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7F1 cinit CODE >1295:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7F1 cinit CODE >1345:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7F2 cinit CODE >1346:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7F3 cinit CODE >1349:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7F4 cinit CODE >1350:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7F5 cinit CODE >1351:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7F6 cinit CODE >1352:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7F7 cinit CODE >1353:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7FC cinit CODE >1359:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7FC cinit CODE >1361:C:\Users\18175218\AppData\Local\Temp\s3r0.
+7FD cinit CODE >1362:C:\Users\18175218\AppData\Local\Temp\s3r0.
+2D9 text18 CODE >35:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2DA text18 CODE >39:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2DE text18 CODE >40:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2E1 text18 CODE >41:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2E9 text18 CODE >42:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2EA text18 CODE >43:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2F6 text18 CODE >44:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+300 text18 CODE >45:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+300 text18 CODE >46:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+305 text18 CODE >47:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+308 text18 CODE >49:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+30E text18 CODE >51:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+30F text18 CODE >52:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+317 text18 CODE >53:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+318 text18 CODE >54:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+324 text18 CODE >55:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+32E text18 CODE >56:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+32E text18 CODE >57:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+333 text18 CODE >58:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+337 text18 CODE >59:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+337 text18 CODE >60:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+126 text17 CODE >98:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+126 text17 CODE >100:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+12C text17 CODE >101:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+117 text16 CODE >65:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+117 text16 CODE >67:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+11B text16 CODE >68:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+185 text15 CODE >45:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+186 text15 CODE >48:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+187 text15 CODE >50:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+189 text15 CODE >51:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+191 text15 CODE >52:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+195 text15 CODE >53:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+197 text15 CODE >48:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+197 text15 CODE >54:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+1A3 text15 CODE >55:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+1A5 text15 CODE >56:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+114 text14 CODE >40:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+114 text14 CODE >42:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+116 text14 CODE >43:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+156 text13 CODE >23:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+156 text13 CODE >25:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+157 text13 CODE >27:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+15D text13 CODE >29:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+165 text13 CODE >30:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+16A text13 CODE >31:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+16A text13 CODE >32:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+16C text13 CODE >33:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+143 text12 CODE >103:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+143 text12 CODE >105:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+147 text12 CODE >106:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+14A text12 CODE >107:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+14E text12 CODE >108:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+150 text12 CODE >109:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+151 text12 CODE >111:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+154 text12 CODE >112:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+155 text12 CODE >113:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+29A text11 CODE >15:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+29A text11 CODE >17:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+29D text11 CODE >18:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+29E text11 CODE >19:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+29F text11 CODE >20:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2A3 text11 CODE >21:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2A4 text11 CODE >22:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2A8 text11 CODE >24:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2B1 text11 CODE >26:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2B7 text11 CODE >27:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2BD text11 CODE >28:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2C3 text11 CODE >29:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2C9 text11 CODE >30:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2CF text11 CODE >32:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+2D8 text11 CODE >33:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+1F5 text10 CODE >89:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1F6 text10 CODE >91:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1FC text10 CODE >92:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+200 text10 CODE >93:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+204 text10 CODE >95:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+205 text10 CODE >96:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+208 text10 CODE >97:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+20B text10 CODE >100:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+20E text10 CODE >101:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+211 text10 CODE >102:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+214 text10 CODE >105:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+217 text10 CODE >106:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+21A text10 CODE >107:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+21D text10 CODE >112:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+220 text10 CODE >113:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+223 text10 CODE >117:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+226 text10 CODE >118:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+227 text10 CODE >119:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+228 text10 CODE >120:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+338 text9 CODE >75:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+338 text9 CODE >78:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+339 text9 CODE >80:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+342 text9 CODE >82:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+356 text9 CODE >83:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+35F text9 CODE >85:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+37E text9 CODE >86:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+395 text9 CODE >87:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+3A0 text9 CODE >88:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+3AB text9 CODE >90:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+3B1 text9 CODE >91:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+3B6 text9 CODE >93:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+3B6 text9 CODE >94:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+11C text8 CODE >55:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+11C text8 CODE >57:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+120 text8 CODE >58:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\keyboard.c
+135 text7 CODE >17:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+136 text7 CODE >19:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+13E text7 CODE >20:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+142 text7 CODE >21:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\fifo.c
+1CA text6 CODE >50:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1CB text6 CODE >55:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1CF text6 CODE >56:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1D0 text6 CODE >58:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1D1 text6 CODE >60:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1D4 text6 CODE >61:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1DA text6 CODE >62:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1DC text6 CODE >63:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1DC text6 CODE >64:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1DD text6 CODE >66:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1E1 text6 CODE >67:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1E6 text6 CODE >68:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1E7 text6 CODE >69:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1EA text6 CODE >58:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1EA text6 CODE >70:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1EF text6 CODE >71:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1F2 text6 CODE >72:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+1F4 text6 CODE >73:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+121 text5 CODE >45:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+121 text5 CODE >47:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+124 text5 CODE >48:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+125 text5 CODE >49:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+25D text4 CODE >76:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+25D text4 CODE >79:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+264 text4 CODE >80:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+269 text4 CODE >81:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+26B text4 CODE >83:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+286 text4 CODE >84:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+294 text4 CODE >85:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+299 text4 CODE >86:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\serialIO.c
+16D text3 CODE >78:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+16E text3 CODE >80:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+184 text3 CODE >81:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+229 text2 CODE >61:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+22A text2 CODE >65:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+22E text2 CODE >66:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+231 text2 CODE >67:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+239 text2 CODE >68:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+23A text2 CODE >69:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+243 text2 CODE >70:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+246 text2 CODE >72:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+247 text2 CODE >73:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+24F text2 CODE >74:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+250 text2 CODE >75:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+259 text2 CODE >76:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+25C text2 CODE >77:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+1A6 text1 CODE >82:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+1A7 text1 CODE >84:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+1B1 text1 CODE >85:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+1B2 text1 CODE >86:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+1C0 text1 CODE >85:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+1C9 text1 CODE >87:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\lcd.c
+3B7 maintext CODE >48:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3B7 maintext CODE >50:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3BA maintext CODE >51:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3BB maintext CODE >52:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3BC maintext CODE >55:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3BE maintext CODE >58:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3C3 maintext CODE >59:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3C8 maintext CODE >60:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3D7 maintext CODE >62:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3D7 maintext CODE >64:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3DC maintext CODE >65:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3DD maintext CODE >67:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3DD maintext CODE >69:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3DE maintext CODE >70:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3DE maintext CODE >71:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3E8 maintext CODE >72:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3EE maintext CODE >73:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3F3 maintext CODE >74:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3F9 maintext CODE >75:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+3FE maintext CODE >76:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+404 maintext CODE >77:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+409 maintext CODE >78:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+40F maintext CODE >79:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+414 maintext CODE >80:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+41A maintext CODE >81:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+41F maintext CODE >82:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+425 maintext CODE >83:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+42A maintext CODE >84:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+430 maintext CODE >85:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+435 maintext CODE >86:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+43B maintext CODE >87:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+440 maintext CODE >88:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+446 maintext CODE >89:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+44B maintext CODE >90:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+451 maintext CODE >91:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+456 maintext CODE >92:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+45C maintext CODE >93:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+461 maintext CODE >94:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+467 maintext CODE >95:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+46C maintext CODE >96:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+472 maintext CODE >97:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+477 maintext CODE >98:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+47D maintext CODE >99:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+482 maintext CODE >100:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+488 maintext CODE >101:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+48D maintext CODE >102:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+493 maintext CODE >103:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+498 maintext CODE >104:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+49E maintext CODE >105:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4B3 maintext CODE >106:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4B4 maintext CODE >107:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4B4 maintext CODE >108:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4B5 maintext CODE >109:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4B9 maintext CODE >110:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4BA maintext CODE >111:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4BA maintext CODE >112:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4BE maintext CODE >113:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4C3 maintext CODE >114:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4C4 maintext CODE >115:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4C4 maintext CODE >116:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4C5 maintext CODE >117:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4C9 maintext CODE >118:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4CA maintext CODE >119:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4CA maintext CODE >120:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4CE maintext CODE >121:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4D3 maintext CODE >122:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4D4 maintext CODE >123:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4D4 maintext CODE >124:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4D5 maintext CODE >125:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4D9 maintext CODE >126:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4DA maintext CODE >127:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4DA maintext CODE >128:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4DE maintext CODE >129:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4E3 maintext CODE >130:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4E4 maintext CODE >131:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4E4 maintext CODE >132:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4E5 maintext CODE >133:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4E9 maintext CODE >134:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4EA maintext CODE >135:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4EA maintext CODE >136:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4EE maintext CODE >137:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4F3 maintext CODE >138:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4F4 maintext CODE >139:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+4F4 maintext CODE >140:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+502 maintext CODE >141:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+508 maintext CODE >142:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+509 maintext CODE >143:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+509 maintext CODE >144:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+50D maintext CODE >145:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+50E maintext CODE >146:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+50E maintext CODE >147:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+51C maintext CODE >148:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+522 maintext CODE >149:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+523 maintext CODE >150:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+523 maintext CODE >151:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+527 maintext CODE >152:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+528 maintext CODE >153:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+528 maintext CODE >154:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+536 maintext CODE >155:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+53C maintext CODE >156:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+53D maintext CODE >157:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+53D maintext CODE >158:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+541 maintext CODE >159:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+542 maintext CODE >160:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+542 maintext CODE >161:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+551 maintext CODE >162:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+557 maintext CODE >163:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+558 maintext CODE >164:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+558 maintext CODE >165:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+55C maintext CODE >166:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+55D maintext CODE >167:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+55D maintext CODE >168:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+56C maintext CODE >169:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+572 maintext CODE >170:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+573 maintext CODE >171:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+573 maintext CODE >172:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+577 maintext CODE >173:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+578 maintext CODE >174:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+578 maintext CODE >175:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+587 maintext CODE >176:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+58D maintext CODE >177:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+58E maintext CODE >178:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+58E maintext CODE >179:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+592 maintext CODE >180:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+593 maintext CODE >181:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+593 maintext CODE >182:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5A2 maintext CODE >183:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5A8 maintext CODE >184:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5A9 maintext CODE >185:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5A9 maintext CODE >186:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5AD maintext CODE >187:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5AE maintext CODE >188:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5AE maintext CODE >189:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5BD maintext CODE >190:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5C3 maintext CODE >191:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5C4 maintext CODE >192:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5C4 maintext CODE >193:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5C8 maintext CODE >194:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5C9 maintext CODE >195:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5C9 maintext CODE >196:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5D8 maintext CODE >197:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5DE maintext CODE >198:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5DF maintext CODE >199:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5DF maintext CODE >200:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5E3 maintext CODE >201:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5E4 maintext CODE >203:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5E4 maintext CODE >204:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5E5 maintext CODE >205:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5E9 maintext CODE >206:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5EA maintext CODE >207:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5EA maintext CODE >208:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5EE maintext CODE >209:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5F3 maintext CODE >210:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5F4 maintext CODE >211:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5F4 maintext CODE >212:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5F5 maintext CODE >213:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5F9 maintext CODE >214:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5FA maintext CODE >215:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5FA maintext CODE >216:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+5FE maintext CODE >217:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+603 maintext CODE >218:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+604 maintext CODE >219:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+604 maintext CODE >220:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+605 maintext CODE >221:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+609 maintext CODE >222:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+60A maintext CODE >223:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+60A maintext CODE >224:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+60E maintext CODE >225:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+613 maintext CODE >226:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+614 maintext CODE >227:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+614 maintext CODE >228:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+615 maintext CODE >229:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+619 maintext CODE >230:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+61A maintext CODE >231:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+61A maintext CODE >232:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+61E maintext CODE >233:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+623 maintext CODE >234:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+624 maintext CODE >236:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+69F maintext CODE >237:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6B3 maintext CODE >239:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6BD maintext CODE >240:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6BE maintext CODE >242:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6BE maintext CODE >243:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6C2 maintext CODE >244:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6C6 maintext CODE >245:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6CD maintext CODE >246:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6CD maintext CODE >247:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6D7 maintext CODE >248:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6D8 maintext CODE >249:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6D8 maintext CODE >250:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6DE maintext CODE >251:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6E2 maintext CODE >252:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6E9 maintext CODE >253:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6E9 maintext CODE >254:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6F3 maintext CODE >255:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6F4 maintext CODE >256:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6F4 maintext CODE >257:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6FA maintext CODE >258:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+6FE maintext CODE >259:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+705 maintext CODE >260:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+705 maintext CODE >261:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+70F maintext CODE >262:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+710 maintext CODE >263:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+710 maintext CODE >264:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+716 maintext CODE >265:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+71A maintext CODE >266:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+721 maintext CODE >267:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+721 maintext CODE >268:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+72B maintext CODE >269:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+72C maintext CODE >270:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+72C maintext CODE >271:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+732 maintext CODE >272:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+737 maintext CODE >273:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+73D maintext CODE >274:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+73E maintext CODE >275:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+73F maintext CODE >276:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+740 maintext CODE >277:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+741 maintext CODE >278:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+742 maintext CODE >279:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+743 maintext CODE >280:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+744 maintext CODE >281:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+745 maintext CODE >282:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+746 maintext CODE >283:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+746 maintext CODE >284:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+74C maintext CODE >285:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+74D maintext CODE >286:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+74D maintext CODE >287:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+74E maintext CODE >289:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+752 maintext CODE >290:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+755 maintext CODE >291:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+757 maintext CODE >292:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+75A maintext CODE >293:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+75C maintext CODE >294:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+75F maintext CODE >295:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+761 maintext CODE >296:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+764 maintext CODE >297:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+78E maintext CODE >298:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+793 maintext CODE >299:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+794 maintext CODE >300:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+794 maintext CODE >301:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+79A maintext CODE >302:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+79B maintext CODE >303:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+7D6 maintext CODE >304:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+7E7 maintext CODE >305:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+7E7 maintext CODE >306:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+7ED maintext CODE >307:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+7EE maintext CODE >308:Z:\MplabX\teste1\sequenciadorProg\sequenciadorProg.X\main.c
+12D clrtext CODE >1332:C:\Users\18175218\AppData\Local\Temp\s3r0.
+12D clrtext CODE >1333:C:\Users\18175218\AppData\Local\Temp\s3r0.
+12E clrtext CODE >1334:C:\Users\18175218\AppData\Local\Temp\s3r0.
+12E clrtext CODE >1335:C:\Users\18175218\AppData\Local\Temp\s3r0.
+12F clrtext CODE >1336:C:\Users\18175218\AppData\Local\Temp\s3r0.
+130 clrtext CODE >1337:C:\Users\18175218\AppData\Local\Temp\s3r0.
+131 clrtext CODE >1338:C:\Users\18175218\AppData\Local\Temp\s3r0.
+132 clrtext CODE >1339:C:\Users\18175218\AppData\Local\Temp\s3r0.
+133 clrtext CODE >1340:C:\Users\18175218\AppData\Local\Temp\s3r0.
+134 clrtext CODE >1341:C:\Users\18175218\AppData\Local\Temp\s3r0.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -547,6 +532,8 @@ C6 clrtext CODE >1422:C:\Users\18263814\AppData\Local\Temp\s4sg.
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+gotoxy@x 77 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
+gotoxy@y 74 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __Hspace_0 2008 0 ABS 0 - -
 __Hspace_1 7E 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
@@ -554,71 +541,70 @@ __Hspace_3 0 0 ABS 0 - -
 __size_of_displayFIFO 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 _currKey 23 0 BANK0 1 bssBANK0 dist/default/production\sequenciadorProg.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-lcdcmd@cmd 72 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-main@a 3B 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
-main@b 3C 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
-main@c 3D 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
-main@d 3E 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+main@a 38 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+main@b 39 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+main@c 3A 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+main@d 3B 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
 __Hstrings 0 0 ABS 0 strings -
 _WPUB 95 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\18263814\AppData\Local\Temp\s4sg.o
+___sp 0 0 STACK 2 stack C:\Users\18175218\AppData\Local\Temp\s3r0.o
 _fifo 25 0 BANK0 1 bssBANK0 dist/default/production\sequenciadorProg.X.production.o
-_main 752 0 CODE 0 maintext dist/default/production\sequenciadorProg.X.production.o
+_main 76E 0 CODE 0 maintext dist/default/production\sequenciadorProg.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-lcd@x 7B 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-lcd@y 77 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-start 0 0 CODE 0 init C:\Users\18263814\AppData\Local\Temp\s4sg.o
+start 0 0 CODE 0 init C:\Users\18175218\AppData\Local\Temp\s3r0.o
 __size_of_main 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __HbssCOMMON 0 0 ABS 0 bssCOMMON -
-_getFIFO 20E 0 CODE 0 text17 dist/default/production\sequenciadorProg.X.production.o
+_getFIFO 2AC 0 CODE 0 text13 dist/default/production\sequenciadorProg.X.production.o
 _OPTION_REGbits 81 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __size_of_currentKey 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+putLCD@c 72 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-_keyboardScan 654 0 CODE 0 text12 dist/default/production\sequenciadorProg.X.production.o
-_previousKey 15C 0 CODE 0 text11 dist/default/production\sequenciadorProg.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\18263814\AppData\Local\Temp\s4sg.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\18263814\AppData\Local\Temp\s4sg.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\18263814\AppData\Local\Temp\s4sg.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\18263814\AppData\Local\Temp\s4sg.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\18263814\AppData\Local\Temp\s4sg.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\18263814\AppData\Local\Temp\s4sg.o
-__size_of_screen_menu 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+_keyboardScan 670 0 CODE 0 text9 dist/default/production\sequenciadorProg.X.production.o
+_previousKey 238 0 CODE 0 text8 dist/default/production\sequenciadorProg.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\18175218\AppData\Local\Temp\s3r0.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\18175218\AppData\Local\Temp\s3r0.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\18175218\AppData\Local\Temp\s3r0.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\18175218\AppData\Local\Temp\s3r0.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\18175218\AppData\Local\Temp\s3r0.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\18175218\AppData\Local\Temp\s3r0.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
+cmdLCD@cmd 72 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
+__size_of_writeLCD 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 serialIObyteShift@dataIn 71 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 initSerialIO@length 71 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 getFIFO@aux 71 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-_delFIFO 23C 0 CODE 0 text19 dist/default/production\sequenciadorProg.X.production.o
+_delFIFO 30A 0 CODE 0 text15 dist/default/production\sequenciadorProg.X.production.o
 __size_of_serialIObyteShift 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 _ANSELH 189 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 initSerialIO@ptrOut 70 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __size_of_initLCD 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __size_of_keyboardScan 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-lcddat@dat 71 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-__size_of_screen_car 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+__end_of_cmdLCD 670 0 CODE 0 text18 dist/default/production\sequenciadorProg.X.production.o
+_writeLCD 34C 0 CODE 0 text1 dist/default/production\sequenciadorProg.X.production.o
 keyboardScan@i 79 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 keyboardScan@j 7A 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 _SERIALIO 9 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-__end_of_keyboardScan 752 0 CODE 0 text12 dist/default/production\sequenciadorProg.X.production.o
-__size_of_lcdxy 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+__end_of_keyboardScan 76E 0 CODE 0 text9 dist/default/production\sequenciadorProg.X.production.o
+__end_of_writeLCD 394 0 CODE 0 text1 dist/default/production\sequenciadorProg.X.production.o
+__end_of_gotoxy 30A 0 CODE 0 text3 dist/default/production\sequenciadorProg.X.production.o
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 start_initialization FE2 0 CODE 0 cinit dist/default/production\sequenciadorProg.X.production.o
 _TRISAbits 85 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 _TRISEbits 89 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-__end_of_lcdcmd 654 0 CODE 0 text15 dist/default/production\sequenciadorProg.X.production.o
-__end_of_lcddat 2D2 0 CODE 0 text8 dist/default/production\sequenciadorProg.X.production.o
-_displayFIFO 14C 0 CODE 0 text18 dist/default/production\sequenciadorProg.X.production.o
+_displayFIFO 228 0 CODE 0 text14 dist/default/production\sequenciadorProg.X.production.o
 serialIOscan@i 78 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 serialIOscan@j 77 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-_keyboardMatrix 26 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
-clear_ram0 17E 0 CODE 0 clrtext dist/default/production\sequenciadorProg.X.production.o
+_keyboardMatrix 12 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
+clear_ram0 25A 0 CODE 0 clrtext dist/default/production\sequenciadorProg.X.production.o
 __pcstackBANK0 35 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+__end_of_putLCD 4BA 0 CODE 0 text2 dist/default/production\sequenciadorProg.X.production.o
 __size_of_putFIFO 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-__end_of_initLCD 596 0 CODE 0 text14 dist/default/production\sequenciadorProg.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\18263814\AppData\Local\Temp\s4sg.o
+__end_of_initLCD 5B2 0 CODE 0 text11 dist/default/production\sequenciadorProg.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\18175218\AppData\Local\Temp\s3r0.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -626,13 +612,10 @@ __Hbank3 0 0 ABS 0 bank3 -
 __Hcinit 1000 0 CODE 0 cinit -
 __Hidloc 0 0 IDLOC 0 idloc -
 __Hstack 0 0 STACK 2 stack -
-__stringbase 24 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
-_initKeyboard 1C2 0 CODE 0 text16 dist/default/production\sequenciadorProg.X.production.o
-lcd@ptr 78 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
+__stringbase 10 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
+_initKeyboard 286 0 CODE 0 text12 dist/default/production\sequenciadorProg.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
-lcdxy@x 76 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-lcdxy@y 74 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-__end_of_serialIObyteShift 328 0 CODE 0 text3 dist/default/production\sequenciadorProg.X.production.o
+__end_of_serialIObyteShift 3EA 0 CODE 0 text6 dist/default/production\sequenciadorProg.X.production.o
 putFIFO@c 71 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4010 0 CONFIG 0 config -
@@ -646,7 +629,6 @@ __Lstack 0 0 STACK 2 stack -
 _lenSerialIO 20 0 BANK0 1 bssBANK0 dist/default/production\sequenciadorProg.X.production.o
 _PORTAbits 5 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 _PORTEbits 9 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-_screen_menu 18E 0 CODE 0 text4 dist/default/production\sequenciadorProg.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hinit 0 0 CODE 0 init -
@@ -663,57 +645,57 @@ __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
-__end_of_keyboardMatrix 46 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
+__end_of_keyboardMatrix 32 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_LCD 8 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __S0 2008 0 ABS 0 - -
 __S1 7E 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_lcd 328 0 CODE 0 text6 dist/default/production\sequenciadorProg.X.production.o
+_cmdLCD 5B2 0 CODE 0 text18 dist/default/production\sequenciadorProg.X.production.o
 __size_of_initKeyboard 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __CFG_FOSC$INTRC_NOCLKOUT 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-__end_of_previousKey 166 0 CODE 0 text11 dist/default/production\sequenciadorProg.X.production.o
+__end_of_previousKey 242 0 CODE 0 text8 dist/default/production\sequenciadorProg.X.production.o
 __size_of_getFIFO 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-__end_of_lcd 38E 0 CODE 0 text6 dist/default/production\sequenciadorProg.X.production.o
+_gotoxy 2DA 0 CODE 0 text3 dist/default/production\sequenciadorProg.X.production.o
 initSerialIO@ptrIn 73 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
 __stringtab 6 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\18263814\AppData\Local\Temp\s4sg.o
-__end_of_putFIFO 1C2 0 CODE 0 text10 dist/default/production\sequenciadorProg.X.production.o
-__end_of_initKeyboard 1E8 0 CODE 0 text16 dist/default/production\sequenciadorProg.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\18175218\AppData\Local\Temp\s3r0.o
+__end_of_putFIFO 286 0 CODE 0 text7 dist/default/production\sequenciadorProg.X.production.o
+__end_of_initKeyboard 2AC 0 CODE 0 text12 dist/default/production\sequenciadorProg.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
-_lcdcmd 596 0 CODE 0 text15 dist/default/production\sequenciadorProg.X.production.o
-_lcddat 27E 0 CODE 0 text8 dist/default/production\sequenciadorProg.X.production.o
 _ptrSerialIn 22 0 BANK0 1 bssBANK0 dist/default/production\sequenciadorProg.X.production.o
-_serialIObyteShift 2D2 0 CODE 0 text3 dist/default/production\sequenciadorProg.X.production.o
-__ptext10 1A6 0 CODE 0 text10 dist/default/production\sequenciadorProg.X.production.o
-__ptext11 15C 0 CODE 0 text11 dist/default/production\sequenciadorProg.X.production.o
-__ptext12 654 0 CODE 0 text12 dist/default/production\sequenciadorProg.X.production.o
-__ptext13 38E 0 CODE 0 text13 dist/default/production\sequenciadorProg.X.production.o
-__ptext14 4E4 0 CODE 0 text14 dist/default/production\sequenciadorProg.X.production.o
-__ptext15 596 0 CODE 0 text15 dist/default/production\sequenciadorProg.X.production.o
-__ptext16 1C2 0 CODE 0 text16 dist/default/production\sequenciadorProg.X.production.o
-__ptext17 20E 0 CODE 0 text17 dist/default/production\sequenciadorProg.X.production.o
-__ptext18 14C 0 CODE 0 text18 dist/default/production\sequenciadorProg.X.production.o
-__ptext19 23C 0 CODE 0 text19 dist/default/production\sequenciadorProg.X.production.o
-__ptext20 152 0 CODE 0 text20 dist/default/production\sequenciadorProg.X.production.o
-__pmaintext 752 0 CODE 0 maintext dist/default/production\sequenciadorProg.X.production.o
+_serialIObyteShift 394 0 CODE 0 text6 dist/default/production\sequenciadorProg.X.production.o
+__ptext10 3EA 0 CODE 0 text10 dist/default/production\sequenciadorProg.X.production.o
+__ptext11 534 0 CODE 0 text11 dist/default/production\sequenciadorProg.X.production.o
+__ptext12 286 0 CODE 0 text12 dist/default/production\sequenciadorProg.X.production.o
+__ptext13 2AC 0 CODE 0 text13 dist/default/production\sequenciadorProg.X.production.o
+__ptext14 228 0 CODE 0 text14 dist/default/production\sequenciadorProg.X.production.o
+__ptext15 30A 0 CODE 0 text15 dist/default/production\sequenciadorProg.X.production.o
+__ptext16 22E 0 CODE 0 text16 dist/default/production\sequenciadorProg.X.production.o
+__ptext17 24C 0 CODE 0 text17 dist/default/production\sequenciadorProg.X.production.o
+__ptext18 5B2 0 CODE 0 text18 dist/default/production\sequenciadorProg.X.production.o
+__size_of_cmdLCD 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+__pmaintext 76E 0 CODE 0 maintext dist/default/production\sequenciadorProg.X.production.o
+writeLCD@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __size_of_delFIFO 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 400E 0 CONFIG 0 config -
+_putLCD 452 0 CODE 0 text2 dist/default/production\sequenciadorProg.X.production.o
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-_LCDbits 8 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-_currentKey 152 0 CODE 0 text20 dist/default/production\sequenciadorProg.X.production.o
-main@rest 44 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
-lcdcmd@nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-main@tecla 41 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
-stackhi 0 0 ABS 0 - C:\Users\18263814\AppData\Local\Temp\s4sg.o
-stacklo 0 0 ABS 0 - C:\Users\18263814\AppData\Local\Temp\s4sg.o
-__end_of__stringtab 26 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
+_currentKey 22E 0 CODE 0 text16 dist/default/production\sequenciadorProg.X.production.o
+__size_of_gotoxy 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+main@rest 41 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+main@tecla 3E 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+putLCD@nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\18175218\AppData\Local\Temp\s3r0.o
+stacklo 0 0 ABS 0 - C:\Users\18175218\AppData\Local\Temp\s3r0.o
+writeLCD@x 7B 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
+writeLCD@y 78 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
+__end_of__stringtab 12 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
 __CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-__size_of_lcdcmd 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-__size_of_lcddat 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -721,39 +703,40 @@ __Lspace_3 0 0 ABS 0 - -
 __pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\sequenciadorProg.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __Lend_init 0 0 CODE 0 end_init -
-__end_of_getFIFO 23C 0 CODE 0 text17 dist/default/production\sequenciadorProg.X.production.o
+__end_of_getFIFO 2DA 0 CODE 0 text13 dist/default/production\sequenciadorProg.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-main@estado 42 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+main@estado 3F 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
 end_of_initialization FF8 0 CODE 0 cinit dist/default/production\sequenciadorProg.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
-_initSerialIO 38E 0 CODE 0 text13 dist/default/production\sequenciadorProg.X.production.o
-_serialIOload 166 0 CODE 0 text2 dist/default/production\sequenciadorProg.X.production.o
-_serialIOscan 46A 0 CODE 0 text1 dist/default/production\sequenciadorProg.X.production.o
+__size_of_putLCD 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+_initSerialIO 3EA 0 CODE 0 text10 dist/default/production\sequenciadorProg.X.production.o
+_serialIOload 242 0 CODE 0 text5 dist/default/production\sequenciadorProg.X.production.o
+_serialIOscan 4BA 0 CODE 0 text4 dist/default/production\sequenciadorProg.X.production.o
 __Lstrings 0 0 ABS 0 strings -
-__end_of_displayFIFO 152 0 CODE 0 text18 dist/default/production\sequenciadorProg.X.production.o
+__end_of_displayFIFO 22E 0 CODE 0 text14 dist/default/production\sequenciadorProg.X.production.o
 serialIObyteShift@dataBit 73 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 serialIObyteShift@dataOut 72 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-main@atuador 3F 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+main@atuador 3C 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
-_initLCD 4E4 0 CODE 0 text14 dist/default/production\sequenciadorProg.X.production.o
+_initLCD 534 0 CODE 0 text11 dist/default/production\sequenciadorProg.X.production.o
 _ptrSerialOut 21 0 BANK0 1 bssBANK0 dist/default/production\sequenciadorProg.X.production.o
-__ptext1 46A 0 CODE 0 text1 dist/default/production\sequenciadorProg.X.production.o
-__ptext2 166 0 CODE 0 text2 dist/default/production\sequenciadorProg.X.production.o
-__ptext3 2D2 0 CODE 0 text3 dist/default/production\sequenciadorProg.X.production.o
-__ptext4 18E 0 CODE 0 text4 dist/default/production\sequenciadorProg.X.production.o
-__ptext5 3F6 0 CODE 0 text5 dist/default/production\sequenciadorProg.X.production.o
-__ptext6 328 0 CODE 0 text6 dist/default/production\sequenciadorProg.X.production.o
-__ptext7 1E8 0 CODE 0 text7 dist/default/production\sequenciadorProg.X.production.o
-__ptext8 27E 0 CODE 0 text8 dist/default/production\sequenciadorProg.X.production.o
-__ptext9 170 0 CODE 0 text9 dist/default/production\sequenciadorProg.X.production.o
-__end_of_currentKey 15C 0 CODE 0 text20 dist/default/production\sequenciadorProg.X.production.o
+cmdLCD@nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
+__ptext1 34C 0 CODE 0 text1 dist/default/production\sequenciadorProg.X.production.o
+__ptext2 452 0 CODE 0 text2 dist/default/production\sequenciadorProg.X.production.o
+__ptext3 2DA 0 CODE 0 text3 dist/default/production\sequenciadorProg.X.production.o
+__ptext4 4BA 0 CODE 0 text4 dist/default/production\sequenciadorProg.X.production.o
+__ptext5 242 0 CODE 0 text5 dist/default/production\sequenciadorProg.X.production.o
+__ptext6 394 0 CODE 0 text6 dist/default/production\sequenciadorProg.X.production.o
+__ptext7 26A 0 CODE 0 text7 dist/default/production\sequenciadorProg.X.production.o
+__ptext8 238 0 CODE 0 text8 dist/default/production\sequenciadorProg.X.production.o
+__ptext9 670 0 CODE 0 text9 dist/default/production\sequenciadorProg.X.production.o
+__end_of_currentKey 238 0 CODE 0 text16 dist/default/production\sequenciadorProg.X.production.o
 delFIFO@n 71 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __size_of_previousKey 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-_screen_car 3F6 0 CODE 0 text5 dist/default/production\sequenciadorProg.X.production.o
-__end_of_delFIFO 27E 0 CODE 0 text19 dist/default/production\sequenciadorProg.X.production.o
+__end_of_delFIFO 34C 0 CODE 0 text15 dist/default/production\sequenciadorProg.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
 _KEYBOARDbits 6 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __size_of_initSerialIO 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
@@ -764,34 +747,28 @@ _fifoTail 7C 0 COMMON 1 bssCOMMON dist/default/production\sequenciadorProg.X.pro
 __size_of_serialIOload 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __size_of_serialIOscan 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-main@sensor 40 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
+main@sensor 3D 0 BANK0 1 cstackBANK0 dist/default/production\sequenciadorProg.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
-__end_of_screen_menu 1A6 0 CODE 0 text4 dist/default/production\sequenciadorProg.X.production.o
 _ANSELbits 188 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __Hend_init 6 0 CODE 0 end_init -
-__end_of_initSerialIO 3F6 0 CODE 0 text13 dist/default/production\sequenciadorProg.X.production.o
+__end_of_initSerialIO 452 0 CODE 0 text10 dist/default/production\sequenciadorProg.X.production.o
 _prevKey 24 0 BANK0 1 bssBANK0 dist/default/production\sequenciadorProg.X.production.o
-__end_of_serialIOload 170 0 CODE 0 text2 dist/default/production\sequenciadorProg.X.production.o
-__end_of_serialIOscan 4E4 0 CODE 0 text1 dist/default/production\sequenciadorProg.X.production.o
+__end_of_serialIOload 24C 0 CODE 0 text5 dist/default/production\sequenciadorProg.X.production.o
+__end_of_serialIOscan 534 0 CODE 0 text4 dist/default/production\sequenciadorProg.X.production.o
 __end_of_main FE2 0 CODE 0 maintext dist/default/production\sequenciadorProg.X.production.o
 _PORTB 6 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
-__end_of_lcdxy 20E 0 CODE 0 text7 dist/default/production\sequenciadorProg.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-_lcdxy 1E8 0 CODE 0 text7 dist/default/production\sequenciadorProg.X.production.o
-_putFIFO 1A6 0 CODE 0 text10 dist/default/production\sequenciadorProg.X.production.o
-__end_of_screen_car 46A 0 CODE 0 text5 dist/default/production\sequenciadorProg.X.production.o
-__size_of_lcd 0 0 ABS 0 - dist/default/production\sequenciadorProg.X.production.o
+_putFIFO 26A 0 CODE 0 text7 dist/default/production\sequenciadorProg.X.production.o
 __initialization FE2 0 CODE 0 cinit dist/default/production\sequenciadorProg.X.production.o
 __pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\sequenciadorProg.X.production.o
-_clearLCD 170 0 CODE 0 text9 dist/default/production\sequenciadorProg.X.production.o
+_clearLCD 24C 0 CODE 0 text17 dist/default/production\sequenciadorProg.X.production.o
 delFIFO@ret 72 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 __pstrings 6 0 STRING 0 strings dist/default/production\sequenciadorProg.X.production.o
-lcddat@nibble 72 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
-__end_of_clearLCD 17E 0 CODE 0 text9 dist/default/production\sequenciadorProg.X.production.o
+__end_of_clearLCD 25A 0 CODE 0 text17 dist/default/production\sequenciadorProg.X.production.o
 keyboardScan@aux 78 0 COMMON 1 cstackCOMMON dist/default/production\sequenciadorProg.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
@@ -819,30 +796,28 @@ keyboardScan@aux 78 0 COMMON 1 cstackCOMMON dist/default/production\sequenciador
 # All other numeric quantities are in decimal.
 %SEGMENTS
 cinit 0 7F1 FE2 F 2
-text1 0 235 46A 3D 2
-text2 0 B3 166 5 2
-text3 0 169 2D2 2B 2
-text4 0 C7 18E C 2
-text5 0 1FB 3F6 3A 2
-text6 0 194 328 33 2
-text7 0 F4 1E8 13 2
-text8 0 13F 27E 2A 2
-text9 0 B8 170 7 2
-text10 0 D3 1A6 E 2
-text11 0 AE 15C 5 2
-text12 0 32A 654 7F 2
-text13 0 1C7 38E 34 2
-text14 0 272 4E4 59 2
-text15 0 2CB 596 5F 2
-text16 0 E1 1C2 13 2
-text17 0 107 20E 17 2
-text18 0 A6 14C 3 2
-text19 0 11E 23C 21 2
-text20 0 A9 152 5 2
-maintext 0 3A9 752 448 2
+text1 0 1A6 34C 24 2
+text2 0 229 452 34 2
+text3 0 16D 2DA 18 2
+text4 0 25D 4BA 3D 2
+text5 0 121 242 5 2
+text6 0 1CA 394 2B 2
+text7 0 135 26A E 2
+text8 0 11C 238 5 2
+text9 0 338 670 7F 2
+text10 0 1F5 3EA 34 2
+text11 0 29A 534 3F 2
+text12 0 143 286 13 2
+text13 0 156 2AC 17 2
+text14 0 114 228 3 2
+text15 0 185 30A 21 2
+text16 0 117 22E 5 2
+text17 0 126 24C 7 2
+text18 0 2D9 5B2 5F 2
+maintext 0 3B7 76E 43A 2
 cstackCOMMON 1 70 70 E 1
 reset_vec 0 0 0 3 2
-bssBANK0 1 20 20 25 1
-strings 0 3 6 56 2
-clrtext 0 BF 17E 8 2
+bssBANK0 1 20 20 22 1
+strings 0 3 6 16 2
+clrtext 0 12D 25A 8 2
 config 0 2007 400E 1 2

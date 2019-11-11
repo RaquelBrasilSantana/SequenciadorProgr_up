@@ -38,7 +38,7 @@
 //***************** Bibliotecas
 #include <xc.h>
 #include "config.h"
-#include "lcd4bitBus.h"
+#include "lcd.h"
 #include "keyboard.h"
 #include "fifo.h"
 #include "serialIO.h"
@@ -53,23 +53,19 @@ void main(void)
     SENSORESbits_t sensor;
     ATUADORESbits_t atuador;
     int estado = 0;
-    forLcd_t screenDisp[16];
+    
   
     initLCD();
-    screen_car();
     initKeyboard();
     initSerialIO(  &sensor, &atuador, 1 );
     
     while( 1 )                      // Laço de repetição infinita.
     {
-        
         keyboardScan();
-        screen_menu();
-
         switch( estado )
         {
             case 0:
-                    estado = 10;
+                    
                     break;
             case 10:
                     rest = getFIFO();
@@ -302,11 +298,10 @@ void main(void)
                         clearLCD();
                         break;
                 case '#':
-                        estado = 0;
+                        estado = 10;
                         break;
             }
-            lcd(0,1, displayFIFO() );
-            
+            writeLCD(0,0, displayFIFO() );
         }
         serialIOscan();
     }

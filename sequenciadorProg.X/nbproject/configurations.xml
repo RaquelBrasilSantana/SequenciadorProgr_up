@@ -8,8 +8,8 @@
       <itemPath>config.h</itemPath>
       <itemPath>fifo.h</itemPath>
       <itemPath>keyboard.h</itemPath>
-      <itemPath>lcd4bitBus.h</itemPath>
       <itemPath>serialIO.h</itemPath>
+      <itemPath>lcd.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -21,9 +21,9 @@
       <itemPath>atuadores.c</itemPath>
       <itemPath>fifo.c</itemPath>
       <itemPath>keyboard.c</itemPath>
-      <itemPath>lcd4bitBus.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>serialIO.c</itemPath>
+      <itemPath>lcd.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

@@ -1,4 +1,4 @@
-# 1 "lcd4bitBus.c"
+# 1 "lcd.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,14 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "lcd4bitBus.c" 2
-# 24 "lcd4bitBus.c"
+# 1 "lcd.c" 2
+
+
+
+
+
+
+
 # 1 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2492,7 +2498,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 27 "C:\\Program Files (x86)\\Microchip\\xc8\\v2.00\\pic\\include\\xc.h" 2 3
-# 24 "lcd4bitBus.c" 2
+# 8 "lcd.c" 2
 
 # 1 "./config.h" 1
 # 61 "./config.h"
@@ -2500,64 +2506,10 @@ extern __bank0 __bit __timeout;
 #pragma config WDTE = OFF
 #pragma config MCLRE = OFF
 #pragma config LVP = OFF
-# 25 "lcd4bitBus.c" 2
+# 9 "lcd.c" 2
 
-# 1 "./lcd4bitBus.h" 1
-# 11 "./lcd4bitBus.h"
-typedef union
-{
-    struct
-    {
-        unsigned char P0 :1;
-        unsigned char P1 :1;
-        unsigned char P2 :1;
-        unsigned char P3 :1;
-        unsigned char P4 :1;
-        unsigned char P5 :1;
-        unsigned char P6 :1;
-        unsigned char P7 :1;
-        unsigned char P8 :1;
-        unsigned char P9 :1;
-        unsigned char P10 :1;
-        unsigned char P11 :1;
-        unsigned char P12 :1;
-        unsigned char P13 :1;
-        unsigned char P14 :1;
-        unsigned char P15 :1;
-    };
-
-} forLcd_t;
-
-
-
-void initLCD( void );
-void intTOstr( int ui16, char * str );
-void lcd( unsigned char x, unsigned char y, const char * ptr );
-void lcdxy( unsigned char x, unsigned char y );
-void lcddat( unsigned char dat );
-void lcdcmd( unsigned char cmd );
-void clearLCD( void );
-void screen_car (void);
-void screen_menu (void);
-void screen_monitor (void);
-
-
-
-char lcdb0( void );
-char lcdb1( void );
-# 26 "lcd4bitBus.c" 2
-
-# 1 "./fifo.h" 1
-
-
-
-void putFIFO( unsigned char c );
-unsigned char getFIFO( void );
-unsigned char statusFIFO( void );
-void * displayFIFO( void );
-unsigned char delFIFO( unsigned char n );
-# 27 "lcd4bitBus.c" 2
-# 84 "lcd4bitBus.c"
+# 1 "./lcd.h" 1
+# 11 "./lcd.h"
 typedef union
 {
     struct
@@ -2573,169 +2525,112 @@ typedef union
 {
     struct
     {
-        unsigned char BUS :4;
-        unsigned char RS :1;
-        unsigned char EN :1;
-        unsigned char B0 :1;
-        unsigned char B1 :1;
+        unsigned char BUS : 4;
+        unsigned char RS : 1;
+        unsigned char EN : 1;
+        unsigned char B0 : 1;
+        unsigned char B1 : 1;
     };
 } LCDbits_t;
-
-volatile LCDbits_t LCDbits __attribute__((address(0x008)));
-# 116 "lcd4bitBus.c"
-void lcdcmd( unsigned char cmd )
-{
-    volatile REGnibble_t nibble;
-
-    nibble.HILO = cmd;
-    LCDbits.RS = 0;
-    LCDbits.BUS = nibble.HI;
-
-    LCDbits.EN = 0;
-    if( cmd == 0x01 || cmd == 0x02 )
-        _delay((unsigned long)((2)*(4000000/4000.0)));
-    else
-        _delay((unsigned long)((40)*(4000000/4000000.0)));
-    LCDbits.EN = 1;
-
-
-    if( cmd != (0x20 | 0x00) )
-    {
-        LCDbits.RS = 0;
-        LCDbits.BUS = nibble.LO;
-        LCDbits.EN = 0;
-        if( cmd == 0x01 || cmd == 0x02 )
-            _delay((unsigned long)((2)*(4000000/4000.0)));
-        else
-            _delay((unsigned long)((40)*(4000000/4000000.0)));
-        LCDbits.EN = 1;
-    }
-}
+# 73 "./lcd.h"
+void cmdLCD( unsigned char cmd );
+void putLCD( unsigned char c );
+void gotoxy( unsigned char x, unsigned char y );
+void writeLCD( unsigned char x, unsigned char y, const char * ptr );
+void initLCD( void );
+char lcdb0 (void);
+char lcdb1 (void);
+void clearLCD( void );
+# 10 "lcd.c" 2
 
 
 
-
-
-
-void lcddat( unsigned char dat )
-{
-    volatile REGnibble_t nibble;
-    nibble.HILO = dat;
-
-    LCDbits.RS = 1;
-    LCDbits.BUS = nibble.HI;
-    LCDbits.EN = 0;
-    _delay((unsigned long)((40)*(4000000/4000000.0)));
-    LCDbits.EN = 1;
-
-    LCDbits.RS = 1;
-    LCDbits.BUS = nibble.LO;
-    LCDbits.EN = 0;
-    _delay((unsigned long)((40)*(4000000/4000000.0)));
-    LCDbits.EN = 1;
-}
-# 175 "lcd4bitBus.c"
-void lcdxy( unsigned char x, unsigned char y )
-{
-    lcdcmd( (0x80+((0x40 * y) + (x + 0x00) & 0x7F)) );
-}
-# 189 "lcd4bitBus.c"
-void lcd( unsigned char x, unsigned char y, const char * ptr )
-{
-    lcdxy(x,y);
-    while( *ptr )
-        lcddat( *ptr++ );
-}
-
-void screen_car (void)
-{
-    lcd(2,0,"SEQUENCIADOR");
-    _delay((unsigned long)((200)*(4000000/4000.0)));
-    lcd(2,1,"PROGRAMAVEL");
-    _delay((unsigned long)((2000)*(4000000/4000.0)));
-    clearLCD();
-}
-
-void screen_menu (void)
-{
-    lcd(0,0,"INSIRA A SEQUEN.");
-}
-
-void screen_monitor (void)
-{
-    lcd(0,0,"TEMPO REAL:");
-}
-
-
-
-
-
-
-
-void intTOstr( int ui16, char * str )
-{
-    for(int div=10000; div>=1; div/=10 )
-    {
-        *str = (ui16 / div) + '0';
-        ui16 = ui16 % div;
-        ++str;
-    }
-    *str = 0;
-}
-# 239 "lcd4bitBus.c"
-char lcdb0( void )
-{
-    return( LCDbits.B0 );
-}
-
-
-
-
-
-
-
-char lcdb1( void )
-{
-    return( LCDbits.B1 );
-}
-
-
-
-
-
-
+volatile LCDbits_t LCD __attribute__((address(0x008)));
 
 void initLCD( void )
+    {
+        LCD.B0 = 0;
+        LCD.B1 = 0;
+        LCD.RS = 0;
+        LCD.BUS = 0x3;
+        LCD.EN = 1;
+        TRISD = 0xC0;
+
+        _delay((unsigned long)((100)*(4000000/4000.0)));
+
+        cmdLCD(0x20);
+        cmdLCD(0x28);
+        cmdLCD(0x0C);
+        cmdLCD(0x01);
+        cmdLCD(0x02);
+
+        _delay((unsigned long)((100)*(4000000/4000.0)));
+    }
+
+void cmdLCD( unsigned char cmd )
 {
-    unsigned char i,j;
-    LCDbits.BUS = 0;
-    LCDbits.RS = 0;
-    LCDbits.EN = 1;
-    TRISD = 0xC0;
+        volatile REGnibble_t nibble;
 
-    _delay((unsigned long)((10)*(4000000/4000.0)));
-    lcdcmd(0x20 | 0x00 );
-    _delay((unsigned long)((1000/4)*(4000000/4000.0)));
-    lcdcmd(0x20 | 0x08 );
-    _delay((unsigned long)((1000/4)*(4000000/4000.0)));
-    lcdcmd(0x08 | 0x04 );
-    _delay((unsigned long)((1000/4)*(4000000/4000.0)));
-# 288 "lcd4bitBus.c"
-    lcdcmd( 0x01 );
-    lcdcmd( 0x02 );
+        nibble.HILO = cmd;
+        LCD.RS = 0;
+        LCD.BUS = nibble.HI ;
+         LCD.EN = 0;
+        if( cmd == 0x01 || cmd == 0x02 )
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        else
+        _delay((unsigned long)((40)*(4000000/4000000.0)));
+        LCD.EN = 1;
 
+        if( cmd != (0x20) )
+    {
+       LCD.RS = 0;
+       LCD.BUS = nibble.LO;
+       LCD.EN = 0;
+       if( cmd == 0x01 || cmd == 0x02 )
+            _delay((unsigned long)((2)*(4000000/4000.0)));
+       else
+            _delay((unsigned long)((40)*(4000000/4000000.0)));
+       LCD.EN = 1;
+    }
+}
+void putLCD( unsigned char c )
+ {
+        volatile REGnibble_t nibble;
 
+        nibble.HILO = c;
+        LCD.RS = 1;
+        LCD.BUS= nibble.HI;
+        LCD.EN = 0;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        LCD.EN = 1;
+
+        LCD.RS = 1;
+        LCD.BUS = nibble.LO;
+        LCD.EN = 0;
+        _delay((unsigned long)((2)*(4000000/4000.0)));
+        LCD.EN = 1;
+}
+void gotoxy( unsigned char x, unsigned char y )
+{
+        cmdLCD((0x80 | 0xC0 * y) + (x & 0X3F));
+}
+void writeLCD( unsigned char x, unsigned char y, const char * ptr )
+{
+        gotoxy(x,y);
+        while( *ptr )
+        putLCD( *ptr++ );
+}
+
+char lcdb0(void)
+{
+    return(LCD.B0);
+}
+char lcdb1(void)
+{
+    return(LCD.B1);
 }
 
 void clearLCD( void )
 {
-    lcdcmd(0x01);
-}
-
-void fifo2lcd ( char passo )
-{
-    char before;
-    before = getFIFO();
-
-
+    cmdLCD(0x01);
 }
